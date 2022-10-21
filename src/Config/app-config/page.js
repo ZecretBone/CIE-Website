@@ -1,4 +1,4 @@
-import { Home } from "../../Pages";
+import { Home, Progguide } from "../../Pages";
 import React from "react";
 // import {
 //   LoginPage,
@@ -26,7 +26,7 @@ export const routePath = [
     name: "programguide",
     path: "/programguide",
     component: () => {
-      return <Home />;
+      return <Progguide />;
     },
     Icon: React.lazy(() => import("@mui/icons-material/HomeOutlined")),
     show: {
