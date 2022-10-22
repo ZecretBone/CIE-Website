@@ -11,7 +11,7 @@ export default function Gallery() {
         mt="2rem"
         px="15vw"
       >
-        <medium >CIE's Gallery</medium>
+        <medium>CIE's Gallery</medium>
       </Typography>
       <Cardlist></Cardlist>
     </div>

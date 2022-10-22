@@ -8,7 +8,7 @@ import { ThemeProvider } from "styled-components";
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-function Cardlist(props) {
+export default function Studentproject(props) {
   var items = [
     {
       name: "AICE",
@@ -38,12 +38,9 @@ function Cardlist(props) {
       direction="row"
       alignItems="center"
       justifyContent="left "
-      mt = "2rem"
-      px = "15vw"
-      
     >
       {items.map((item, i) => (
-        <Grid item xs={6} >
+        <Grid item xs={6}>
           <Item key={i} item={item} />
         </Grid>
       ))}
@@ -68,5 +65,3 @@ function Item(props) {
     </Card>
   );
 }
-
-export default Cardlist;
