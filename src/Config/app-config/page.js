@@ -1,4 +1,4 @@
-import { Home, Progguide, Studentwork, Courses, Aboutus } from "../../Pages";
+import { Home, Progguide, Studentwork, Courses, Aboutus, Project } from "../../Pages";
 import React from "react";
 // import {
 //   LoginPage,
