@@ -15,6 +15,39 @@ import AdbIcon from '@mui/icons-material/Adb';
 
 const pages = ['Program Guide', 'Course', 'About Us','Student Work','FAQ','Contact US'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const newpages = [
+    {
+        id:0,
+        name:'Program Guide',
+        path:'/programguide'
+    },
+    {
+        id:1,
+        name:'Course',
+        path:'/programguide'
+    },
+    {
+        id:2,
+        name:'About Us',
+        path:'/programguide'
+    },
+    {
+        id:3,
+        name:'Student Work',
+        path:'/programguide'
+    },
+    {
+        id:4,
+        name:'FAQ',
+        path:'/programguide'
+    },
+    {
+        id:5,
+        name:'Contact Us',
+        path:'/programguide'
+    },
+
+]
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -55,7 +88,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            CIE
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
