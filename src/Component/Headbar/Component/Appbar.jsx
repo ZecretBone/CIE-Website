@@ -13,8 +13,41 @@ import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['Program Guide', 'Course', 'About Us','Student Work','FAQ','Contact US'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
+const newpages = [
+    {
+        id:0,
+        name:'Program Guide',
+        path:'/programguide'
+    },
+    {
+        id:1,
+        name:'Course',
+        path:'/programguide'
+    },
+    {
+        id:2,
+        name:'About Us',
+        path:'/programguide'
+    },
+    {
+        id:3,
+        name:'Student Work',
+        path:'/programguide'
+    },
+    {
+        id:4,
+        name:'FAQ',
+        path:'/programguide'
+    },
+    {
+        id:5,
+        name:'Contact Us',
+        path:'/programguide'
+    },
+
+]
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -55,7 +88,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            CIE
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
@@ -125,7 +158,7 @@ const ResponsiveAppBar = () => {
             ))}
           </Box>
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -153,7 +186,7 @@ const ResponsiveAppBar = () => {
                 </MenuItem>
               ))}
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>
