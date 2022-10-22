@@ -1,4 +1,4 @@
-import { Home, Progguide, Studentwork } from "../../Pages";
+import { Home, Progguide, Studentwork, Courses, Aboutus } from "../../Pages";
 import React from "react";
 // import {
 //   LoginPage,
@@ -37,7 +37,7 @@ export const routePath = [
     name: "courses",
     path: "/courses",
     component: () => {
-      return <Home />;
+      return <Courses />;
     },
     Icon: React.lazy(() => import("@mui/icons-material/HomeOutlined")),
     show: {
@@ -50,7 +50,7 @@ export const routePath = [
     name: "about-us",
     path: "/about-us",
     component: () => {
-      return <Home />;
+      return <Aboutus />;
     },
     Icon: React.lazy(() => import("@mui/icons-material/HomeOutlined")),
     show: {

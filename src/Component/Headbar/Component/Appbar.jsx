@@ -23,13 +23,13 @@ const newpages = [
     },
     {
         id:1,
-        name:'Course',
-        path:'/programguide'
+        name:'Courses',
+        path:'/courses'
     },
     {
         id:2,
         name:'About Us',
-        path:'/programguide'
+        path:'/about-us'
     },
     {
         id:3,
@@ -38,13 +38,13 @@ const newpages = [
     },
     {
         id:4,
-        name:'FAQ',
-        path:'/programguide'
+        name:'FAQS',
+        path:'/faqs'
     },
     {
         id:5,
         name:'Contact Us',
-        path:'/programguide'
+        path:'/contact-us'
     },
 
 ]
@@ -132,7 +132,7 @@ const ResponsiveAppBar = () => {
             variant="h5"
             noWrap
             component="a"
-            href=""
+            href="/"
             sx={{
               mr: 2,
               display: { xs: 'flex', md: 'none' },
@@ -144,7 +144,7 @@ const ResponsiveAppBar = () => {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            CIE
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {newpages.map((page) => (

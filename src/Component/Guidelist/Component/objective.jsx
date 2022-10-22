@@ -1,4 +1,4 @@
-import * as React from 'react';
+import React, { useState, useEffect } from 'react';
 import ListSubheader from '@mui/material/ListSubheader';
 import List from '@mui/material/List';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -13,19 +13,20 @@ import ExpandMore from '@mui/icons-material/ExpandMore';
 import Typography from '@mui/material/Typography';
 import StarBorder from '@mui/icons-material/StarBorder';
 import ListItem from '@mui/material/ListItem';
+import Stack from '@mui/material/Stack';
+import Box from '@mui/material/Box';
+import Container from '@mui/material/Container';
 
 export default function Objective() {
   const [open, setOpen] = React.useState(false);
-  const [isopen, setExpand] = React.useState([true,false,false]);
-
-
   
+  const[mount,setMount] = React.useState(false)
 
   const guide = [
     {
       id:0,
       title:"Program Educational Objectives",
-      content:"jdakdasdnakdnaskjdnajkdnajkda",
+      content:"jdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkda",
       opening:false
     },
     {
@@ -41,28 +42,17 @@ export default function Objective() {
       opening:false
     },
   ]
+  const [allguide, setGuide] = React.useState(guide);
   
-
-  const startPage =()=>{
-//     let i = 0;
-//     let t = isopen;
-//   while (i < guide.length){
-    
-//     t.push(false);
-    
-//     i += 1;
-//   }
-//   setExpand(t);
-//setExpand([false,false,false])
-  }
-  
-  startPage();
+  useEffect(() => {
+    console.log(mount);
+  }, [mount])  // pass `value` as a dependency
 
   const handleExpand =(event,pos)=>{
-    let t = isopen;
-    t[pos] = !t[pos];
-    setExpand(t)
-    console.log(isopen)
+    let t = allguide;
+    t[pos].opening = !t[pos].opening;
+    setGuide(t)
+    setMount(!mount)
   }
 
   const handleClick = () => {
@@ -104,19 +94,28 @@ export default function Objective() {
     // </List>
 
     <List>
-        {guide.map((each) => (
-            <ListItem key={each}>
-             <ListItemButton onClick={(event) => handleExpand(event, each.id)}>
+        {allguide.map((each) => (
+            <ListItem key={each} >
+                
+                <Stack alignItems="baseline">
+             <ListItemButton   onClick={(event) => handleExpand(event, each.id)}>
         
         <ListItemText primary={each.title} />
-        {isopen[each.id] ? <ExpandLess /> : <ExpandMore />}
+        {each.opening ? <ExpandLess /> : <ExpandMore />}
       </ListItemButton>
-      <Collapse in={isopen[each.id]} timeout="auto" unmountOnExit>
+      <Collapse in={each.opening} timeout="auto" unmountOnExit sx={{ width:10 }}>
+      
+      <Box sx={{ width:'10px' }}>
+        
         <Typography component="div" disablePadding sx={{ pl: 4 }}>
-          dsmdkadklamdkasmdkadmalda
+          {each.content}
         </Typography>
+        
+        </Box>
 
       </Collapse>
+      </Stack>
+      
       </ListItem>
     
                 
