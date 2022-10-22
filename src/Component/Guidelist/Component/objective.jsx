@@ -16,6 +16,10 @@ import ListItem from '@mui/material/ListItem';
 import Stack from '@mui/material/Stack';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import Accordion from '@mui/material/Accordion';
+import AccordionSummary from '@mui/material/AccordionSummary';
+import AccordionDetails from '@mui/material/AccordionDetails';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function Objective() {
   const [open, setOpen] = React.useState(false);
@@ -26,7 +30,7 @@ export default function Objective() {
     {
       id:0,
       title:"Program Educational Objectives",
-      content:"jdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkdajdakdasdnakdnaskjdnajkdnajkda",
+      content:`dfadsadasdasdas`,
       opening:false
     },
     {
@@ -97,7 +101,7 @@ export default function Objective() {
         {allguide.map((each) => (
             <ListItem key={each} >
                 
-                <Stack alignItems="baseline">
+                {/* <Stack alignItems="baseline">
              <ListItemButton   onClick={(event) => handleExpand(event, each.id)}>
         
         <ListItemText primary={each.title} />
@@ -105,16 +109,32 @@ export default function Objective() {
       </ListItemButton>
       <Collapse in={each.opening} timeout="auto" unmountOnExit sx={{ width:10 }}>
       
-      <Box sx={{ width:'10px' }}>
+      
         
-        <Typography component="div" disablePadding sx={{ pl: 4 }}>
+        <Typography component="div" disablePadding sx={{ pl: 4,maxWidth:500 }} paragraph>
           {each.content}
         </Typography>
         
-        </Box>
+        
 
       </Collapse>
-      </Stack>
+      </Stack> */}
+      <Accordion sx={{width:500}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography >{each.title}</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography sx={{maxWidth:500}}>
+            {each.content}
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
+
       
       </ListItem>
     

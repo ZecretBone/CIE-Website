@@ -1,6 +1,6 @@
 
 import { Typography } from '@mui/material';
-import {Headbar} from '../../Component'
+import {Headbar,Members} from '../../Component'
 
 
 function Aboutus() {
@@ -9,6 +9,7 @@ function Aboutus() {
     <div >
         <Headbar/>
         <Typography variant="h3">About Us</Typography>
+        <Members/>
 
         
       
