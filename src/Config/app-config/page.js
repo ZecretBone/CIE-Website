@@ -73,6 +73,25 @@ export const routePath = [
     childPage: null,
   },
   {
+    name: "student-work",
+    path: "/student-work/:id",
+    component: () => {
+      return <Project />;
+    },
+    loader: async ({ request, params }) => {
+      return fetch(
+        `/fake/api/teams/${params.teamId}.json`,
+        { signal: request.signal }
+      );
+    },
+    Icon: React.lazy(() => import("@mui/icons-material/HomeOutlined")),
+    show: {
+      header: true,
+      footer: true,
+    },
+    childPage: null,
+  },
+  {
     name: "faqs",
     path: "/faqs",
     component: () => {
