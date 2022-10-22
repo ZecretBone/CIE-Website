@@ -34,7 +34,7 @@ const newpages = [
     {
         id:3,
         name:'Student Work',
-        path:'/programguide'
+        path:'/student-work'
     },
     {
         id:4,
@@ -147,13 +147,14 @@ const ResponsiveAppBar = () => {
             LOGO
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-            {pages.map((page) => (
+            {newpages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
+                href={page.path}
               >
-                {page}
+                {page.name}
               </Button>
             ))}
           </Box>
