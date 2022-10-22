@@ -8,7 +8,6 @@ import React from "react";
 
 export const routePath = [
   {
-    id: 0,
     name: "home",
     path: "/",
     component: () => {
@@ -22,7 +21,6 @@ export const routePath = [
     childPage: null,
   },
   {
-    id: 1,
     name: "programguide",
     path: "/programguide",
     component: () => {
@@ -36,7 +34,6 @@ export const routePath = [
     childPage: null,
   },
   {
-    id: 2,
     name: "courses",
     path: "/courses",
     component: () => {
@@ -50,7 +47,6 @@ export const routePath = [
     childPage: null,
   },
   {
-    id: 3,
     name: "about-us",
     path: "/about-us",
     component: () => {
@@ -64,7 +60,6 @@ export const routePath = [
     childPage: null,
   },
   {
-    id: 4,
     name: "student-work",
     path: "/student-work",
     component: () => {
@@ -78,7 +73,6 @@ export const routePath = [
     childPage: null,
   },
   {
-    id: 5,
     name: "faqs",
     path: "/faqs",
     component: () => {
@@ -92,7 +86,6 @@ export const routePath = [
     childPage: null,
   },
   {
-    id: 6,
     name: "contact-us",
     path: "/contact-us",
     component: () => {
