@@ -8,8 +8,8 @@ function Aboutus() {
   return (
     <div >
         <Headbar/>
-        <Typography variant="h3">About Us</Typography>
-        <Members/>
+        <Typography variant="h3">In Short About Us</Typography>
+        <Members></Members>
 
         
       

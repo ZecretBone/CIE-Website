@@ -5,7 +5,7 @@ import Gallery from "./Gallery";
 import ProjectDisplay from "./ProjectDisplay";
 import Members from "./Members";
 import Projectlist from "./Projectlist";
-import Projectdisplay from "./Projectdisplay";
+import FeatureCourses from "./FeatureCourses";
 
 export {
   Headbar,
@@ -15,4 +15,5 @@ export {
   Members,
   Projectlist,
   ProjectDisplay,
+  FeatureCourses,
 };

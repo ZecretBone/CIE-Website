@@ -21,7 +21,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
-export default function Objective() {
+export default function Programdetail() {
   const [open, setOpen] = React.useState(false);
   
   const[mount,setMount] = React.useState(false)
@@ -29,7 +29,7 @@ export default function Objective() {
   const guide = [
     {
       id:0,
-      title:"Program Educational Objectives",
+      title:"Transferred Credits and Placement Program",
       content:`     Engineering Quality
       Our graduates will apply computer engineering practice, combined with innovative process, to identify and solve significant problems across a broad range of applications.
       Innovation
@@ -44,16 +44,11 @@ export default function Objective() {
     },
     {
       id:1,
-      title:"Student Outcomes",
+      title:"Program Structure",
       content:"jdakdasdnakdnaskjdnajkdnajkda",
       opening:false
     },
-    {
-      id:2,
-      title:"Possible Career",
-      content:"jdakdasdnakdnaskjdnajkdnajkda",
-      opening:false
-    },
+
   ]
   const [allguide, setGuide] = React.useState(guide);
   

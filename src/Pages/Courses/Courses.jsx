@@ -1,6 +1,6 @@
 
 import { Typography } from '@mui/material';
-import {Headbar} from '../../Component'
+import {Headbar,FeatureCourses} from '../../Component'
 
 
 function Courses() {
@@ -9,6 +9,7 @@ function Courses() {
     <div >
         <Headbar/>
         <Typography variant="h3">Featured Courses</Typography>
+        <FeatureCourses></FeatureCourses>
 
         
       

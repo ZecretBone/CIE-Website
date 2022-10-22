@@ -1,12 +1,12 @@
 
-import {Headbar, Projectdisplay} from '../../Component'
+import {Headbar, ProjectDisplay} from '../../Component'
 
 export default function Project() {
 
   return (
     <div >
         <Headbar/>
-        <Projectdisplay/>
+        <ProjectDisplay/>
     </div>
   );
 }

@@ -49,6 +49,7 @@ const newpages = [
 
 ]
 
+
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -61,7 +62,7 @@ const ResponsiveAppBar = () => {
   };
 
   const handleCloseNavMenu = () => {
-    console.log('hello world')
+    
     setAnchorElNav(null);
   };
 
@@ -154,6 +155,7 @@ const ResponsiveAppBar = () => {
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 href={page.path}
+                color="success"
               >
                 {page.name}
               </Button>
