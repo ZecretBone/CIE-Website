@@ -1,12 +1,11 @@
-
-import {Gallery, Headbar, Landing, ProjectDisplay} from '../../Component'
+import {Headbar, Projectlist} from '../../Component'
 
 function Studentwork() {
 
   return (
     <div >
         <Headbar/>
-        <ProjectDisplay/>
+        <Projectlist/>
     </div>
   );
 }

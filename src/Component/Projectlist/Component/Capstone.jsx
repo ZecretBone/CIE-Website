@@ -4,25 +4,29 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { ThemeProvider } from "styled-components";
+import { Link } from "react-router-dom";
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
-export default function Studentproject(props) {
+export default function Capstone(props) {
   var items = [
     {
+      id: "1",
       name: "AICE",
       description: "Probably the most random thing you have ever seen!",
       link: "",
       img: "",
     },
     {
+      id: "2",
       name: "CIE",
       description: "Hello World!",
       link: "",
       img: "",
     },
     {
+      id: "2",
       name: "CIE",
       description: "Hello World!",
       link: "",
@@ -50,6 +54,7 @@ export default function Studentproject(props) {
 
 function Item(props) {
   return (
+    <Link to= {`/student-work/${ props.item.id }`} >
     <Card sx={{ Width: 345 }}>
       <CardMedia component="img" height="140" image={props.item.img} />
       <ThemeProvider theme={theme}>
@@ -63,5 +68,7 @@ function Item(props) {
         </CardContent>
       </ThemeProvider>
     </Card>
+    </Link>
   );
 }
+
