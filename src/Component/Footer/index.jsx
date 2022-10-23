@@ -17,10 +17,10 @@ export default function Pagefooter() {
         </Typography>
         <Grid item xs={12}>
           <Grid container direction="column" >
-            <Typography variant="p">Mail</Typography>
-            <Typography variant="p">Phone1</Typography>
-            <Typography variant="p">Phone2</Typography>
-            <Typography variant="p">Phone2</Typography>
+            <Typography variant="p">cie@kmitl.ac.th</Typography>
+            <Typography variant="p">+66 902920977</Typography>
+            <Typography variant="p">+66 658785000</Typography>
+            <Typography variant="p"></Typography>
             <FacebookIcon></FacebookIcon>
           </Grid>
         </Grid>
@@ -32,9 +32,11 @@ export default function Pagefooter() {
         </Typography>
         <Grid item xs={12}>
           <Grid container direction="column">
-            <Typography variant="p">Mail</Typography>
-            <Typography variant="p">Phone1</Typography>
-            <Typography variant="p">Phone2</Typography>
+            <Typography variant="p">Computer Innovation Engineering
+Faculty of Engineering, KMITL</Typography>
+            <Typography variant="p">1 Soi Chalongkrung 1
+Ladkrabang, Bangkok 10520</Typography>
+            <Typography variant="p">Thailand</Typography>
           </Grid>
         </Grid>
       </Grid>
@@ -45,17 +47,17 @@ export default function Pagefooter() {
         </Typography>
         <Grid item xs={6}>
           <Grid container direction="column">
-            <Typography variant="p">Mail</Typography>
-            <Typography variant="p">Phone1</Typography>
-            <Typography variant="p">Phone2</Typography>
+            <Typography variant="p">Program Guide</Typography>
+            <Typography variant="p">home</Typography>
+            <Typography variant="p">gallery</Typography>
           </Grid>
         </Grid>
         <Grid item xs={6}>
           <Grid container direction="column">
             <Typography variant="h6"></Typography>
-            <Typography variant="p">Mail</Typography>
-            <Typography variant="p">Phone1</Typography>
-            <Typography variant="p">Phone2</Typography>
+            <Typography variant="p">Department of Computer Engineering</Typography>
+            <Typography variant="p">Faculty of Engineering</Typography>
+            <Typography variant="p">King Mongkut's Institute of Technology Ladkrabang</Typography>
           </Grid>
         </Grid>
       </Grid>
