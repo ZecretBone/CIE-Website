@@ -71,8 +71,10 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl">
+    <AppBar position="sticky" 
+    //sx={{mb:3.5}}
+    >
+      <Container  maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
@@ -123,7 +125,7 @@ const ResponsiveAppBar = () => {
               }}
             >
               {newpages.map((page) => (
-                <MenuItem key={page} href={page.path} onClick={handleCloseNavMenu}>
+                <MenuItem color="inherit" key={page} href={page.path} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page.name}</Typography>
                 </MenuItem>
               ))}
@@ -151,11 +153,12 @@ const ResponsiveAppBar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {newpages.map((page) => (
               <Button
+              
                 key={page}
                 onClick={handleCloseNavMenu}
                 sx={{ my: 2, color: 'white', display: 'block' }}
                 href={page.path}
-                color="success"
+                color="inherit"
               >
                 {page.name}
               </Button>

@@ -9,10 +9,10 @@ function Progguide() {
 
   return (
     <div >
-        <Headbar/>
+        <Headbar />
        
         <Grid container
-      
+      sx={{mt:3.5}}
       alignItems="center"
       justifyContent="center ">
             <Stack spacing={1.5}>
