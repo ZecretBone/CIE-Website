@@ -25,8 +25,8 @@ export default function NewGallery() {
     >
     <ImageList
       sx={{
-         width: '70%',
-        height: '100%',
+         width: '100%',
+        height: '70%',
         // Promote the list into its own layer in Chrome. This costs memory, but helps keeping high FPS.
         transform: 'translateZ(0)',
       }}
@@ -34,8 +34,8 @@ export default function NewGallery() {
       gap={1.5}
     >
       {itemData.map((item) => {
-        const cols = item.featured ? 4 : 2;
-        const rows = item.featured ? 4 : 2;
+        const cols = item.featured ? 2 : 1;
+        const rows = item.featured ? 2 : 1;
 
         return (
           <ImageListItem key={item.img} cols={cols} rows={rows}>
