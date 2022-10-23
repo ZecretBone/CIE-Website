@@ -78,7 +78,7 @@ const ResponsiveAppBar = () => {
   }
 
   return (
-    <AppBar position="sticky" 
+    <AppBar  position="sticky" 
     //sx={{mb:3.5}}
     //sx={{ textAlign: 'center' }}
     //sx={{ p: 0 }}
