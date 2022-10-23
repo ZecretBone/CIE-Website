@@ -8,6 +8,7 @@ function Home() {
         <Headbar/>
         <Landing/>
         <AboutUs/>
+        
         <Members/>
         <Footer/>
     </div>

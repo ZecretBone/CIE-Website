@@ -1,16 +1,17 @@
 import * as React from "react";
-import {Typography, Grid} from "@mui/material";
+import {Typography, Grid, Card, CardMedia} from "@mui/material";
 
-export default function Us() {
+export default function AboutUs() {
   return (
     <div>
       <Grid container direction="row" justify="center">
-        <Grid item xs={8}>
+        <Grid item xs={7}>
       <Typography
         alignItems="center"
         justifyContent="left"
         mt="2rem"
-        px="10vw"
+        pl="10vw"
+        pr="5vw"
       >
       <Typography variant="h4" pb="1.5rem" ><strong>ABOUT US</strong></Typography>
       
@@ -30,7 +31,11 @@ export default function Us() {
       </Typography>
       </Typography>
       </Grid>
-      <Grid item xs={4}>
+      <Grid item display="flex" xs={5} sx={{ alignItems:"center", pt:"2rem", maxWidth:"60%" }}>
+        <Card  sx={{ maxWidth: "80%", }}>
+          <CardMedia component="img" alt="HM building" image="/homepage/03aboutus.png">
+          </CardMedia>
+        </Card>
       </Grid>
       </Grid>
     </div>
