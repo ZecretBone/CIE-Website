@@ -1,5 +1,5 @@
 
-import {Gallery, Headbar,Landing} from '../../Component'
+import {Gallery, Headbar, Landing, Footer} from '../../Component'
 
 function Home() {
 
@@ -8,6 +8,7 @@ function Home() {
         <Headbar/>
         <Landing/>
         <Gallery/>
+        <Footer/>
     </div>
   );
 }

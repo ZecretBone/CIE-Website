@@ -83,7 +83,7 @@ export const routePath = [
   },
   {
     name: "student-work",
-    path: "/student-work/:id",
+    path: "/student-work/:type/:id",
     component: () => {
       return <Project />;
     },

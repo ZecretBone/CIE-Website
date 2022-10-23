@@ -1,34 +1,26 @@
 import * as React from "react";
-import { Paper, Button, Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { useParams } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
+import capstoneProject from "../../Data/capstoneProj.json";
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
 export default function Project(props) {
-  const { id } = useParams("id");
-  var projects = [
-    {
-      id: "1",
-      name: "AICE",
-      description: "Probably the most random thing you have ever seen!",
-      link: "",
-    },
-    {
-      id: "2",
-      name: "CIE",
-      description: "Hello World!",
-      link: "",
-    },
-  ];
+  const params = useParams();
 
-  const project = projects.find((project) => project.id === id);
+  let items
+  if (params.type === "capstone"){
+    items = capstoneProject["capstoneProject"]
+  }else if (params.type === "project"){
+    items = {}
+  }
+
+  let item = items.find( (item) => item.id === params.id)
+
   return (
-    <div>
-      <Typography>Project: {project.name}</Typography>
-      <Typography>Description: {project.description}</Typography>
-    </div>
+    <Typography> Project Name: {item.name} </Typography>
   );
 }
+
