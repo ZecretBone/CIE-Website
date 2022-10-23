@@ -3,8 +3,7 @@ import {Typography, Grid, Card, CardMedia} from "@mui/material";
 
 export default function AboutUs() {
   return (
-    <div>
-      <Grid container direction="row" justify="center">
+      <Grid container direction="row" justify="center" sx={{ pt:"3rem" }}>
         <Grid item xs={7}>
       <Typography
         alignItems="center"
@@ -38,6 +37,5 @@ export default function AboutUs() {
         </Card>
       </Grid>
       </Grid>
-    </div>
   );
 }
