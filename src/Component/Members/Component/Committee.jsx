@@ -13,28 +13,28 @@ import Grid from '@mui/material/Grid';
 export default function Committee() {
     const allcom = [
         {
-            name:'Akkarit',
-            pic:'https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg',
+            name:'Dr. Orathai Sangpetch',
+            pic:'https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/602108b4a145a672f3b91aee_sangpetch-orathai.png',
             content:'Asst. Professor'
         },
         {
-            name:'Akkarit',
-            pic:'https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg',
+            name:'Dr. Akkarit Sangpetch',
+            pic:'https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/6021088450f1913affedd970_sangpetch-akkarit.png',
             content:'Asst. Professor'
         },
         {
-            name:'Akkarit',
-            pic:'https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg',
+            name:'Dr. Panarat Cherntanomwong',
+            pic:'https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/60336e5826975a156a054885_ple.jpg',
             content:'Asst. Professor'
         },
         {
-            name:'Akkarit',
-            pic:'https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg',
+            name:'Dr. Sutheera Puntheeranurak',
+            pic:'https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/60336ec0a475645245cc37ef_unnamed%20(1).jpg',
             content:'Asst. Professor'
         },
         {
-            name:'Akkarit',
-            pic:'https://upload.wikimedia.org/wikipedia/en/d/d5/Professor_%28Money_Heist%29.jpg',
+            name:'Dr. Chutimet Srinilta',
+            pic:'https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/60336e78ccc97512c5fc523a_timeline_20201115_215130.jpg',
             content:'Asst. Professor'
         },
     ]
