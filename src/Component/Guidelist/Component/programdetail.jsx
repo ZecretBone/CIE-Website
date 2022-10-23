@@ -20,6 +20,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import Grid from '@mui/material/Grid';
 
 export default function Programdetail() {
   const [open, setOpen] = React.useState(false);
@@ -101,50 +102,86 @@ export default function Programdetail() {
         
     // </List>
 
-    <List>
-        {allguide.map((each) => (
-            <ListItem key={each} >
+    // <List>
+    //     {allguide.map((each) => (
+    //         <ListItem key={each} >
                 
-                {/* <Stack alignItems="baseline">
-             <ListItemButton   onClick={(event) => handleExpand(event, each.id)}>
-        
-        <ListItemText primary={each.title} />
-        {each.opening ? <ExpandLess /> : <ExpandMore />}
-      </ListItemButton>
-      <Collapse in={each.opening} timeout="auto" unmountOnExit sx={{ width:10 }}>
-      
-      
-        
-        <Typography component="div" disablePadding sx={{ pl: 4,maxWidth:500 }} paragraph>
-          {each.content}
-        </Typography>
-        
-        
+           
+    //   <Accordion sx={{width:1000}}>
+    //     <AccordionSummary
+    //       expandIcon={<ExpandMoreIcon />}
+    //       aria-controls="panel1a-content"
+    //       id="panel1a-header"
+    //     >
+    //       <Typography >{each.title}</Typography>
+    //     </AccordionSummary>
+    //     <AccordionDetails>
+    //       <Typography sx={{maxWidth:1000}}>
+    //         {each.content}
+    //       </Typography>
+    //     </AccordionDetails>
+    //   </Accordion>
 
-      </Collapse>
-      </Stack> */}
+
+      
+    //   </ListItem>
+    
+                
+    //     ))}
+    // </List>
+    <Grid
+      container
+      
+      alignItems="center"
+      justifyContent="center "
+    >
+       <Stack spacing={1.5}>
+       <Typography>Program Details</Typography>
+  <Accordion sx={{width:1000}}>
+        <AccordionSummary
+          expandIcon={<ExpandMoreIcon />}
+          aria-controls="panel1a-content"
+          id="panel1a-header"
+        >
+          <Typography >Transferred Credits and Placement Program</Typography>
+        </AccordionSummary>
+        <AccordionDetails>
+          <Typography sx={{maxWidth:1000}}>
+            14556
+          </Typography>
+          <Typography sx={{maxWidth:1000}}>
+            14556
+          </Typography>
+          <Typography sx={{maxWidth:1000}}>
+            14556
+          </Typography>
+        </AccordionDetails>
+      </Accordion>
+
       <Accordion sx={{width:1000}}>
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel1a-content"
           id="panel1a-header"
         >
-          <Typography >{each.title}</Typography>
+          <Typography >Program Structure</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography sx={{maxWidth:1000}}>
-            {each.content}
+            14556
+          </Typography>
+          <Typography sx={{maxWidth:1000}}>
+            14556
+          </Typography>
+          <Typography sx={{maxWidth:1000}}>
+            14556
           </Typography>
         </AccordionDetails>
       </Accordion>
+    </Stack>
+    </Grid>
 
-
-      
-      </ListItem>
-    
-                
-        ))}
-    </List>
+   
 
 
   );
