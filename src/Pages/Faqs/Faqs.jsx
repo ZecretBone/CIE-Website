@@ -8,7 +8,7 @@ function Faqs() {
   return (
     <div >
         <Headbar/>
-        <Typography variant="h3">Frequently Asked Questions</Typography>
+        <Typography sx={{mt:3.5}} variant="h3">Frequently Asked Questions</Typography>
         <Faq></Faq>
 
         

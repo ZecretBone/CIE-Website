@@ -8,7 +8,7 @@ function Courses() {
   return (
     <div >
         <Headbar/>
-        <Typography variant="h3">Contact Us</Typography>
+        <Typography sx={{mt:3.5}} variant="h3">Contact Us</Typography>
         <Contact></Contact>
 
         
