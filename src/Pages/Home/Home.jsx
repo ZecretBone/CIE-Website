@@ -1,5 +1,5 @@
 
-import {Gallery, Headbar, Landing, Footer} from '../../Component'
+import {AboutUs, Headbar, Landing, Footer, Members} from '../../Component'
 
 function Home() {
 
@@ -7,7 +7,8 @@ function Home() {
     <div >
         <Headbar/>
         <Landing/>
-        <Gallery/>
+        <AboutUs/>
+        <Members/>
         <Footer/>
     </div>
   );
