@@ -1,4 +1,13 @@
-import { Home, Progguide, Studentwork, Courses, Aboutus, Project } from "../../Pages";
+import {
+  Home,
+  Progguide,
+  Studentwork,
+  Courses,
+  Aboutus,
+  Project,
+  Contactus,
+  Faqs,
+} from "../../Pages";
 import React from "react";
 // import {
 //   LoginPage,
@@ -79,10 +88,9 @@ export const routePath = [
       return <Project />;
     },
     loader: async ({ request, params }) => {
-      return fetch(
-        `/fake/api/teams/${params.teamId}.json`,
-        { signal: request.signal }
-      );
+      return fetch(`/fake/api/teams/${params.teamId}.json`, {
+        signal: request.signal,
+      });
     },
     Icon: React.lazy(() => import("@mui/icons-material/HomeOutlined")),
     show: {
@@ -95,7 +103,7 @@ export const routePath = [
     name: "faqs",
     path: "/faqs",
     component: () => {
-      return <Home />;
+      return <Faqs />;
     },
     Icon: React.lazy(() => import("@mui/icons-material/HomeOutlined")),
     show: {
@@ -108,7 +116,7 @@ export const routePath = [
     name: "contact-us",
     path: "/contact-us",
     component: () => {
-      return <Home />;
+      return <Contactus />;
     },
     Icon: React.lazy(() => import("@mui/icons-material/HomeOutlined")),
     show: {

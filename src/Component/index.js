@@ -6,6 +6,8 @@ import ProjectDisplay from "./ProjectDisplay";
 import Members from "./Members";
 import Projectlist from "./Projectlist";
 import FeatureCourses from "./FeatureCourses";
+import Contact from "./Contact";
+import Faq from "./Faq";
 
 export {
   Headbar,
@@ -16,4 +18,6 @@ export {
   Projectlist,
   ProjectDisplay,
   FeatureCourses,
+  Contact,
+  Faq,
 };
