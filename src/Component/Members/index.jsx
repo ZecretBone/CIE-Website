@@ -1,16 +1,20 @@
 import Committee from './Component/Committee'
-import Us from './Component/Us'
 import Typography from '@mui/material/Typography';
 
 export default function Members(){
     return(
         <div>
-        <Us>
-
-        </Us>
-        <Typography variant="h3">
-            Program Committee
-        </Typography>
+        <div>
+      <Typography
+        variant="h5"
+        alignItems="center"
+        justifyContent="left"
+        mt="2rem"
+        px="10vw"
+      >
+        <strong>MEET OUR FACULTY</strong>
+      </Typography>
+    </div>
         <Committee>
 
         </Committee>

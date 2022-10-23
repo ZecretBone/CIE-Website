@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import Faq from "./Faq";
 import Footer from "./Footer";
 import Topbar from "./Topbar";
+import AboutUs from "./AboutUs";
 
 export {
   Headbar,
@@ -24,4 +25,5 @@ export {
   Faq,
   Footer,
   Topbar,
+  AboutUs,
 };

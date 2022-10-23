@@ -230,28 +230,34 @@ export default function Objective() {
         <AccordionDetails>
             
             <Typography variant='h6'  sx={{maxWidth:1000}}>
-            Hello World
+            Engineering Quality
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          Our graduates will apply computer engineering practice, combined with innovative process, to identify and solve significant problems across a broad range of applications.
           </Typography>
           <Typography variant='h6'  sx={{maxWidth:1000}}>
-            Hello World
+          Innovation
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          Our graduates will adapt the process by which technological ideas are generated, developed and transformed into new business products, processes, services and/or solutions.
           </Typography>
           <Typography variant='h6'  sx={{maxWidth:1000}}>
-            Hello World
+          Leadership
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          Our graduates will apply their technical and innovative leadership to establish successful careers in their business, profession and community.
           </Typography>
           <Typography variant='h6'  sx={{maxWidth:1000}}>
-            Hello World
+          Economic Impact
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          Our graduates will apply their technical expertise, leadership and innovative mindset to support and strengthen the society’s economic well-being.
+          </Typography>
+          <Typography variant='h6'  sx={{maxWidth:1000}}>
+          Lifelong Learning
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          Our graduates will learn new technologies, methodologies and tools and adapt them to respond to the challenges of a changing environment.
           </Typography>
           
         </AccordionDetails>
@@ -268,23 +274,42 @@ export default function Objective() {
         <AccordionDetails>
             
             <Typography   sx={{maxWidth:1000}}>
-            Hello World
+            The program has the following outcomes which adhere to ABET student outcomes for the engineering program.
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          (a) an ability to apply knowledge of mathematics, science, and engineering
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          (b) an ability to design and conduct experiments, as well as to analyze and interpret data
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          (c) an ability to design an innovative system, component, or process to meet desired needs within realistic constraints such as economic, environmental, social, political, ethical, health and safety, manufacturability, and sustainability
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          (d) an ability to function on multidisciplinary teams
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          (e) an ability to identify, formulate, and solve engineering problems
           </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          (f) an understanding of professional and ethical responsibility
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          (g) an ability to communicate effectively
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          (h) the broad education necessary to understand the impact of engineering solutions in a global, economic, environmental, and societal context
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          (i) a recognition of the need for, and an ability to engage in life-long learning
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          (j) a knowledge of contemporary issues
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          (k) an ability to use the techniques, skills, and modern engineering tools necessary for engineering practice.
+          </Typography>
+
           
         </AccordionDetails>
       </Accordion>
@@ -301,22 +326,43 @@ export default function Objective() {
         <AccordionDetails>
             
             <Typography   sx={{maxWidth:1000}}>
-            Hello World
+            After completing the program, the graduates can pursue any of the following careers:
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          1. Innovation Engineer
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          2. Startup Entrepreneurs
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          3. Cloud Engineer
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          4. Innovation Software Engineer
           </Typography>
           <Typography  sx={{maxWidth:1000}}>
-            nice to meet you
+          5. IT Innovation & Developer
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          6. Enterprise Data Engineer
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          7. Innovation Application Developer
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          8. Product Designer
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          9. Embedded System Engineer
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          10. Security Analyst
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          11. Software Architect
+          </Typography>
+          <Typography  sx={{maxWidth:1000}}>
+          12. Solution Engineer
           </Typography>
           
         </AccordionDetails>

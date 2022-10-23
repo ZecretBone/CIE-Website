@@ -10,7 +10,7 @@
       "linkYT": "https://youtu.be/RVu5GtbfrXU",
       "linkGit": "https://github.com/phisonk/Traveler-s-VR-temple",
       "academic year": "2020",
-      "img":"../../../Data/picture/01Traveler.jpg"
+      "img":"https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/625fea871f63b918c9fdc5cb_OculusScreenshot1590946934-400x400.jpeg"
     },
     {
       "id": "2",
@@ -22,7 +22,7 @@
       "linkYT": "https://youtu.be/Pq-XT5LMfTg",
       "linkGit": "https://github.com/fernvnat14/AR-QR-Project",
       "Academic year": "2020",
-      "img":"../../../Data/picture/02ARNutrition.jpg"
+      "img":"https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/625fe8b3aac0391128ce61b0_101590813_547997382775894_7828904092666691584_n-400x400.jpg"
     },
     {
       "id": "3",
@@ -34,7 +34,7 @@
       "link": "https://youtu.be/Kh8feXOMo8A",
       "linkGit": "https://github.com/aomramete/ParkinProject",
       "Academic year": "2020",
-      "img":"../../../Data/picture/03ParkIn.jpg"
+      "img":"https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/625fec427a9af3b4b70872ba_Screen-Shot-2563-08-03-at-06.37.37-e1596411573984.png"
     },
     {
       "id": "4",
@@ -46,7 +46,7 @@
       "linkYT": "https://youtu.be/RI09zpmIhww",
       "linkGit": "https://github.com/kitspon/project_beacon",
       "Academic year": "2020",
-      "img":"../../../Data/picture/04NavigationApp.jpg"
+      "img":"https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/625feddb979493b4cb039add_141443216_852430192218373_1105397501730811060_n-400x400.jpg"
     },
     {
       "id": "5",
@@ -62,7 +62,7 @@
       "linkYT": "",
       "linkGit": "https://github.com/npmekk/VideoQR",
       "Academic year": "2021",
-      "img":"../../../Data/picture/05TinyEpicBrains.jpg"
+      "img":"https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/625fe72fb8503d0cde72a8eb_TinyEpicBrains.-The-Inventor-of-VideoQR-01.jpg"
     },
     {
       "id": "6",
@@ -78,7 +78,7 @@
       "linkYT": "",
       "linkGit": "",
       "Academic year": "2021",
-      "img":"../../../Data/picture/06CyberSecurity.jpg"
+      "img":"https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/625fe5321f63b9eb16f64cf5_ReportCover.jpg"
     },
     {
       "id": "7",
@@ -94,7 +94,7 @@
       "linkYT": "https://youtu.be/yi9cMdbf_HU",
       "linkGit": "https://github.com/Jilaporn/CIEON-Inventory-Management-System",
       "Academic year": "2021",
-      "img":"../../../Data/picture/07CIEON.jpg"
+      "img":"https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/625fd2b1e91165267db95616_inventory-management.png"
     }
   ]
 }
