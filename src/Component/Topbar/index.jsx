@@ -1,13 +1,13 @@
-import Appbar from './Component/Appbar'
 
+import Top from './Component/Top'
 import Box from '@mui/material/Box';
 
-export default function Headbar(){
+export default function Topbar(){
     return(
         
-<Appbar>
+<Top>
 
-</Appbar>
+</Top>
        
         
        

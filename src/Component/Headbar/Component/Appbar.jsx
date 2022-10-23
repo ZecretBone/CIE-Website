@@ -12,6 +12,9 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import AdbIcon from '@mui/icons-material/Adb';
+import Stack from '@mui/material/Stack';
+import Grid from '@mui/material/Grid';
+import { Link } from "react-router-dom";
 
 const pages = ['Program Guide', 'Course', 'About Us','Student Work','FAQ','Contact US'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -70,10 +73,79 @@ const ResponsiveAppBar = () => {
     setAnchorElUser(null);
   };
 
+  const navto =()=>{
+    window.location.href = '/contact-us'
+  }
+
   return (
     <AppBar position="sticky" 
     //sx={{mb:3.5}}
+    //sx={{ textAlign: 'center' }}
+    //sx={{ p: 0 }}
     >
+        
+        
+        <Container 
+        >
+            
+            {/* <Grid 
+            alignItems="right"
+            justifyContent="right"
+             >
+            <Stack direction="row"   >
+                <Button  variant="success">
+                    Hello World
+                </Button>
+                <Typography >+66 0945456456</Typography>
+            </Stack>
+
+            </Grid> */}
+            {/* <Button varaint="success" onclick={{navto}}> 
+                Gello
+            </Button>
+            <Button varaint="success" onclick={{navto}} >
+                <Typography display="inline"  sx={{ textAlign: 'right' }} >cie.kmitl.ac.th</Typography>
+                </Button>
+            
+            <Link to='/contact-us' >
+            <Typography display="inline"  sx={{ textAlign: 'right' }} >+66 0945456456</Typography>
+            </Link> */}
+
+<Box sx={{ flexGrow: 0 }}>
+            <Tooltip title="Open settings">
+              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+              </IconButton>
+            </Tooltip>
+            <Menu
+              sx={{ mt: '45px' }}
+              id="menu-appbar"
+              anchorEl={anchorElUser}
+              anchorOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              keepMounted
+              transformOrigin={{
+                vertical: 'top',
+                horizontal: 'right',
+              }}
+              open={Boolean(anchorElUser)}
+              onClose={handleCloseUserMenu}
+            >
+              {settings.map((setting) => (
+                <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                  <Typography textAlign="center">{setting}</Typography>
+                </MenuItem>
+              ))}
+            </Menu>
+          </Box>
+            
+            
+            
+            
+            </Container>
+        
       <Container  maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
