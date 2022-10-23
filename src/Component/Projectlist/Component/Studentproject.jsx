@@ -54,7 +54,7 @@ export default function Studentproject(props) {
 
 function Item(props) {
   return (
-    <Link to= {`/student-work/${ props.item.id }`} >
+    <Link to= {`/student-work/project/${ props.item.id }`} >
     <Card sx={{ Width: 345 }}>
       <CardMedia component="img" height="140" image={props.item.img} />
       <ThemeProvider theme={theme}>

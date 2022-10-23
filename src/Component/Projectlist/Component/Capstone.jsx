@@ -5,34 +5,17 @@ import CardMedia from "@mui/material/CardMedia";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { ThemeProvider } from "styled-components";
 import { Link } from "react-router-dom";
+import projects from "../../../Data/capstoneProj.json";
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
 export default function Capstone(props) {
-  var items = [
-    {
-      id: "1",
-      name: "AICE",
-      description: "Probably the most random thing you have ever seen!",
-      link: "",
-      img: "",
-    },
-    {
-      id: "2",
-      name: "CIE",
-      description: "Hello World!",
-      link: "",
-      img: "",
-    },
-    {
-      id: "2",
-      name: "CIE",
-      description: "Hello World!",
-      link: "",
-      img: "",
-    },
-  ];
+  let items = projects;
+  console.log(items);
+items["capstoneProject"].map((item, i) => (
+  console.log(item)
+))
 
   return (
     <Grid
@@ -43,23 +26,24 @@ export default function Capstone(props) {
       alignItems="center"
       justifyContent="left "
     >
-      {items.map((item, i) => (
+      {items["capstoneProject"].map((item, i) => (
         <Grid item xs={6}>
           <Item key={i} item={item} />
         </Grid>
       ))}
+
     </Grid>
   );
 }
 
 function Item(props) {
   return (
-    <Link to= {`/student-work/${ props.item.id }`} >
+    <Link to= {`/student-work/capstone/${ props.item.id }`} >
     <Card sx={{ Width: 345 }}>
       <CardMedia component="img" height="140" image={props.item.img} />
       <ThemeProvider theme={theme}>
         <CardContent>
-          <Typography variant="h4" component="div">
+          <Typography variant="h6" component="div">
             <strong>{props.item.name}</strong>
           </Typography>
           <Typography variant="body2" color="text.secondary">
