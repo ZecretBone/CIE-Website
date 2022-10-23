@@ -9,8 +9,6 @@ import IconButton from '@mui/material/IconButton';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 
-import { Wrapper, Status,Marker } from "@googlemaps/react-wrapper";
-
 export default function Map() {
 
     let center = 1
