@@ -6,6 +6,9 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import Stack from '@mui/material/Stack';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
 
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: '100%',
@@ -52,8 +55,114 @@ export default function Faqlist() {
     },
   ]
 
+  const tocontact =()=>{
+    window.location.href= '/contact-us'
+  }
+
 
   return (
+    
+    <Grid
+    container
+      
+      alignItems="center"
+      justifyContent="center "
+    >
+      
+      <Stack>
+      <Typography sx={{mt:3.5}} variant="h3">FREQUENTLY ASKED QUESTIONS</Typography>
+
+
+      <Card elevation={0} sx={{ minWidth: 275 }}>
+      <CardContent>
+      <Grid container>
+      <Grid item xs>
+        dasdsadsad?
+      </Grid>
+      
+      <Grid item xs>
+        dsadasidjsakjdh
+      </Grid>
+    </Grid>
+      </CardContent>
+      
+    </Card>
+
+    <Divider/>
+
+    <Card elevation={0} sx={{ minWidth: 275 }}>
+      <CardContent>
+      <Grid container>
+      <Grid item xs>
+        fdsfdsfdsfdsf
+      </Grid>
+      
+      <Grid item xs>
+        fsdfdsfdsfs
+      </Grid>
+    </Grid>
+      </CardContent>
+      
+    </Card>
+    <Divider/>
+
+    <Card elevation={0} sx={{ minWidth: 275 }}>
+      <CardContent>
+      <Grid container>
+      <Grid item xs>
+        fdsfdsfdsfdsf
+      </Grid>
+      
+      <Grid item xs>
+        fsdfdsfdsfs
+      </Grid>
+    </Grid>
+      </CardContent>
+      
+    </Card>
+    <Divider/>
+
+    <Card elevation={0} sx={{ minWidth: 275 }}>
+      <CardContent>
+      <Grid container>
+      <Grid item xs>
+        fdsfdsfdsfdsf
+      </Grid>
+      
+      <Grid item xs>
+        fsdfdsfdsfs
+      </Grid>
+    </Grid>
+      </CardContent>
+      
+    </Card>
+
+    <Divider/>
+
+    <Card elevation={0} sx={{ minWidth: 275 }}>
+      <CardContent>
+      <Grid container>
+      <Grid item xs>
+        fdsfdsfdsfdsf
+      </Grid>
+      
+      <Grid item xs>
+        fsdfdsfdsfs
+      </Grid>
+    </Grid>
+      </CardContent>
+      
+    </Card>
+
+
+
+    <Typography>Can't find what you are looking for?
+        <Button onClick={tocontact}>
+            Contact Us
+        </Button>
+      </Typography>
+      </Stack>
+    </Grid>
     // <Grid container>
     //   <Grid item xs>
     //     {content}
@@ -67,35 +176,37 @@ export default function Faqlist() {
     //     {content}
     //   </Grid>
     // </Grid>
-<List>
-  {allfaqs.map((each) =>(
-    <ListItem>
-      <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-      <Grid container>
-      <Grid item xs>
-        {each.q}
-      </Grid>
-      <Divider 
-      orientation="vertical" 
-      flexItem>
+
+//  <List>
+//   {allfaqs.map((each) =>(
+//     <ListItem>
+//       <Card elevation={0} sx={{ minWidth: 275 }}>
+//       <CardContent>
+//       <Grid container>
+//       <Grid item xs>
+//         {each.q}
+//       </Grid>
+//       <Divider 
+//       orientation="vertical" 
+//       flexItem>
         
-      </Divider>
-      <Grid item xs>
-        {each.a}
-      </Grid>
-    </Grid>
-      </CardContent>
+//       </Divider>
+//       <Grid item xs>
+//         {each.a}
+//       </Grid>
+//     </Grid>
+//       </CardContent>
       
-    </Card>
-
-
+//     </Card>
     
-    </ListItem>
     
-  ))}
+//     </ListItem>
+    
+//   ))}
 
-</List>
+// </List> 
+
+
 
 
     

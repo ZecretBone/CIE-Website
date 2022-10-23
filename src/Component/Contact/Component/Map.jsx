@@ -22,6 +22,7 @@ export default function Map() {
 //     <Marker position={position} />
 //   </Map>
 // </Wrapper>
-<button>df</button>
+{/* <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.8572674509473!2d100.77248521495883!3d13.727090001563658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311d664a6229ce87%3A0xe18798804c647947!2sKMITL%20School%20of%20Engineering!5e0!3m2!1sen!2sth!4v1651039451571!5m2!1sen!2sth" 
+width={300} height={300} title='A youtube video on React hooks'></iframe> */}
   );
 }

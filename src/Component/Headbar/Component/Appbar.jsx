@@ -17,7 +17,7 @@ import EmailIcon from '@mui/icons-material/Email';
 const pages = [
   "Program Guide",
   "Course",
-  "About Us",
+  "Gallery",
   "Student Work",
   "FAQ",
   "Contact US",
@@ -36,8 +36,8 @@ const newpages = [
   },
   {
     id: 2,
-    name: "About Us",
-    path: "/about-us",
+    name: "Gallery",
+    path: "/gallery",
   },
   {
     id: 3,
@@ -68,19 +68,27 @@ const ResponsiveAppBar = () => {
   };
 
   const handleCloseNavMenu = () => {
+    console.log('hi there')
     setAnchorElNav(null);
+  };
+  const testtab = () => {
+    console.log('ghege')
+    setAnchorElNav(null);
+  };
+
+  const smalltabber = (event,path) => {
+    console.log('c')
+    setAnchorElNav(null);
+    window.location.href = path
   };
 
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
 
-  const navto = () => {
-    window.location.href = "/contact-us";
-  };
 
   return (
-    <AppBar position="sticky" sx={{ backgroundColor:"white", color:"black"}}>
+    <AppBar elevation={7}  position="sticky" sx={{ backgroundColor:"white", color:"black"}}>
       <Typography
         display="flex"
         sx={{
@@ -91,7 +99,7 @@ const ResponsiveAppBar = () => {
           backgroundColor:"#F3791D"
         }}
       >
-        <Link to="/">
+        {/* <Link to="/">
           <Typography
             display="flex"
             sx={{ color: "white", textAlign: "center", backgroundImage:"none",pr:"1rem"}}
@@ -99,7 +107,16 @@ const ResponsiveAppBar = () => {
             <CallIcon sx={{ px:"0.5rem" }}></CallIcon>
             +66 902920977
           </Typography>
-        </Link>
+        </Link> */}
+        <a href= "tel:0902920977" target="_blank">
+          <Typography
+            display="flex"
+            sx={{ color: "white", textAlign: "center", backgroundImage:"none",pr:"1rem"}}
+          >
+            <CallIcon sx={{ px:"0.5rem" }}></CallIcon>
+            +66 902920977
+          </Typography>
+          </a>
 
         <a href= "mailto:cie@kmitl.ac.th" target="_blank">
           <Typography
@@ -138,7 +155,7 @@ const ResponsiveAppBar = () => {
 
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          
           <Typography
             variant="h6"
             noWrap
@@ -154,7 +171,8 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            CIE
+            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+            <img src="./CIE_logo.png" ></img>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -190,14 +208,14 @@ const ResponsiveAppBar = () => {
                 <MenuItem
                   key={page}
                   href={page.path}
-                  onClick={handleCloseNavMenu}
+                  onClick={(event)=>smalltabber(event,page.path)}
                 >
                   <Typography textAlign="center" sx={{ color:"black" }}>{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
-          <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          
           <Typography
             variant="h5"
             noWrap
@@ -214,15 +232,16 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            CIE
+            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {newpages.map((page) => (
               <Button
                 key={page}
-                onClick={handleCloseNavMenu}
+                onClick={(event)=>smalltabber(event,page.path)}
+                //onClick={testtab}
                 sx={{ mx: "1rem", color: "grey", display: "block" }}
-                href={page.path}
+                
               >
                 {page.name}
               </Button>

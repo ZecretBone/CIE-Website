@@ -56,8 +56,8 @@ export const routePath = [
     childPage: null,
   },
   {
-    name: "about-us",
-    path: "/about-us",
+    name: "gallery",
+    path: "/gallery",
     component: () => {
       return <Aboutus />;
     },
