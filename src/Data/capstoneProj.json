@@ -10,7 +10,7 @@
       "linkYT": "https://youtu.be/RVu5GtbfrXU",
       "linkGit": "https://github.com/phisonk/Traveler-s-VR-temple",
       "academic year": "2020",
-      "img":""
+      "img":"../../../Data/picture/01Traveler.jpg"
     },
     {
       "id": "2",
@@ -22,7 +22,7 @@
       "linkYT": "https://youtu.be/Pq-XT5LMfTg",
       "linkGit": "https://github.com/fernvnat14/AR-QR-Project",
       "Academic year": "2020",
-      "img":""
+      "img":"../../../Data/picture/02ARNutrition.jpg"
     },
     {
       "id": "3",
@@ -34,7 +34,7 @@
       "link": "https://youtu.be/Kh8feXOMo8A",
       "linkGit": "https://github.com/aomramete/ParkinProject",
       "Academic year": "2020",
-      "img":""
+      "img":"../../../Data/picture/03ParkIn.jpg"
     },
     {
       "id": "4",
@@ -46,7 +46,7 @@
       "linkYT": "https://youtu.be/RI09zpmIhww",
       "linkGit": "https://github.com/kitspon/project_beacon",
       "Academic year": "2020",
-      "img":""
+      "img":"../../../Data/picture/04NavigationApp.jpg"
     },
     {
       "id": "5",
@@ -62,7 +62,7 @@
       "linkYT": "",
       "linkGit": "https://github.com/npmekk/VideoQR",
       "Academic year": "2021",
-      "img":""
+      "img":"../../../Data/picture/05TinyEpicBrains.jpg"
     },
     {
       "id": "6",
@@ -78,7 +78,7 @@
       "linkYT": "",
       "linkGit": "",
       "Academic year": "2021",
-      "img":""
+      "img":"../../../Data/picture/06CyberSecurity.jpg"
     },
     {
       "id": "7",
@@ -94,7 +94,7 @@
       "linkYT": "https://youtu.be/yi9cMdbf_HU",
       "linkGit": "https://github.com/Jilaporn/CIEON-Inventory-Management-System",
       "Academic year": "2021",
-      "img":""
+      "img":"../../../Data/picture/07CIEON.jpg"
     }
   ]
 }
