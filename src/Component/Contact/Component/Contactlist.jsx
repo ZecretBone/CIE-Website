@@ -5,28 +5,32 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import IconButton from '@mui/material/IconButton';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 export default function Contactlist() {
+
+    const address = 'dsadasdsadasd'
   return (
     <Card sx={{ maxWidth: 345 }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-      />
+      
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Lizard
+          Contact Info
         </Typography>
         <Typography variant="body2" color="text.secondary">
-          Lizards are a widespread group of squamate reptiles, with over 6,000
-          species, ranging across all continents except Antarctica
+          {address}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+      <IconButton aria-label="instagram">
+          <InstagramIcon />
+        </IconButton>
+      <IconButton aria-label="facebook">
+          <FacebookIcon />
+        </IconButton>
+        
       </CardActions>
     </Card>
   );
