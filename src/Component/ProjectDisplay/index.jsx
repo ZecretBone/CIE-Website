@@ -1,7 +1,6 @@
 import * as React from "react";
-import { Paper, Button, Box, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
-import { ThemeProvider } from "styled-components";
 import { useParams } from "react-router-dom";
 import capstoneProject from "../../Data/capstoneProj.json";
 
