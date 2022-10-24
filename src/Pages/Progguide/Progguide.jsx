@@ -1,6 +1,6 @@
 
 import { Typography } from '@mui/material';
-import {Headbar, Guidelist,Topbar} from '../../Component'
+import {Headbar, Guidelist,Topbar,Footer} from '../../Component'
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
 
@@ -34,7 +34,7 @@ function Progguide() {
       <Guidelist/>
 
 
-        
+      <Footer/>
       
     </div>
   );

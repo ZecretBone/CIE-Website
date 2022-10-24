@@ -10,6 +10,10 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Stack from '@mui/material/Stack';
 import Grid from '@mui/material/Grid';
+import Divider from '@mui/material/Divider';
+import CallIcon from "@mui/icons-material/Call";
+import EmailIcon from '@mui/icons-material/Email';
+import CIEicon from './image2vector.svg'
 
 export default function Contactlist() {
 
@@ -32,19 +36,54 @@ export default function Contactlist() {
       
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Contact Info
+            <img style={{maxWidth:40, maxHeight:40}} src={CIEicon}></img>
+           Contact Info
         </Typography>
+        <Divider variant="middle"></Divider>
         <Typography variant="body2" color="text.secondary">
           {address1}
         </Typography>
       </CardContent>
+      
       <CardActions>
-      <IconButton aria-label="instagram">
-          <InstagramIcon />
-        </IconButton>
-      <IconButton aria-label="facebook">
-          <FacebookIcon />
-        </IconButton>
+        <Grid container
+      
+      alignItems="left"
+      justifyContent="left ">
+
+        
+        <Stack spacing={1.5}>
+            {/* <Typography>
+            <InstagramIcon />
+             Instagram
+            </Typography>
+            <Button>
+            <FacebookIcon />
+            Facebook
+            </Button>
+            <Button variant="contained" startIcon={<FacebookIcon />}>
+                Facebook1
+            </Button>
+            <Button variant="outlined" startIcon={<FacebookIcon />}>
+                Facebook2
+            </Button> */}
+            <Button   startIcon={<CallIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            +66 902920977
+            </Button>
+            <Button   startIcon={<EmailIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            cie@kmitl.ac.th
+            </Button>
+            <Button   startIcon={<InstagramIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            cie.kmitlofficial
+            </Button>
+            <Button  startIcon={<FacebookIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            Computer Innovation Engineering, KMITL
+            </Button>
+            {/* <Button  startIcon={<FacebookIcon/>} >
+                Facebook
+            </Button> */}
+        </Stack>
+        </Grid>
         
       </CardActions>
     </Card>
@@ -53,15 +92,18 @@ export default function Contactlist() {
       
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
-          Contact Info
+          AICE Contact Info
         </Typography>
         <Typography variant="body2" color="text.secondary">
           {address2}
         </Typography>
       </CardContent>
+      <Divider variant="middle"></Divider>
       <CardActions>
+        
       <IconButton aria-label="instagram">
           <InstagramIcon />
+          Instagram
         </IconButton>
       <IconButton aria-label="facebook">
           <FacebookIcon />

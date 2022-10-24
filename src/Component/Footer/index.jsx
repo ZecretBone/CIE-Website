@@ -8,7 +8,8 @@ export default function Pagefooter() {
   return (
     <Grid
       container
-      sx={{ color: "white", backgroundColor: "black", py: "2rem" }}
+      sx={{ color: "white", backgroundColor: "black", py: "2rem" , bottom: 0, left: 0, right: 0,mt:20 }}
+      // sx={{ position: 'fixed'}}
     >
       <Grid item xs={2}></Grid>
       <Grid item xs={2} container>

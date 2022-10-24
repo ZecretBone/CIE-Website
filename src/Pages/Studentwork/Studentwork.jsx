@@ -1,4 +1,4 @@
-import {Headbar, Projectlist} from '../../Component'
+import {Headbar, Projectlist,Footer} from '../../Component'
 
 function Studentwork() {
 
@@ -6,6 +6,7 @@ function Studentwork() {
     <div >
         <Headbar/>
         <Projectlist/>
+        <Footer/>
     </div>
   );
 }

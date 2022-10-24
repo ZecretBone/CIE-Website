@@ -1,5 +1,5 @@
 
-import {Headbar, ProjectDisplay} from '../../Component'
+import {Headbar, ProjectDisplay,Footer} from '../../Component'
 
 export default function Project() {
 
@@ -7,6 +7,7 @@ export default function Project() {
     <div >
         <Headbar/>
         <ProjectDisplay/>
+        <Footer/>
     </div>
   );
 }

@@ -1,6 +1,6 @@
 
 import { Typography } from '@mui/material';
-import {Headbar,Faq} from '../../Component'
+import {Headbar,Faq,Footer} from '../../Component'
 
 
 function Faqs() {
@@ -14,7 +14,7 @@ function Faqs() {
         
       
 
-
+        <Footer/>
         
       
     </div>

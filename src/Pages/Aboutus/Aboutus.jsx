@@ -1,6 +1,6 @@
 
 import { Typography } from '@mui/material';
-import {Headbar,Members,Gallery} from '../../Component'
+import {Headbar,Members,Gallery,Footer} from '../../Component'
 
 
 function Aboutus() {
@@ -12,7 +12,7 @@ function Aboutus() {
         <Members></Members> */}
         <Gallery></Gallery>
 
-        
+        <Footer/>
       
 
 
