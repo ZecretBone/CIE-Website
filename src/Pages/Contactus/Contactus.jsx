@@ -10,8 +10,8 @@ function Courses() {
         <Headbar/>
         {/* <Typography sx={{mt:3.5}} variant="h3">Contact Us</Typography> */}
         <Contact></Contact>
-
-        <Footer sx={{mt:20}}/>
+        
+        <Footer />
       
 
 
