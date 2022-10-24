@@ -3,14 +3,20 @@ import { Typography, Grid, Box } from "@mui/material";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
+import Stack from '@mui/material/Stack';
 
 export default function Pagefooter() {
   return (
     <Grid
+    alignItems="center"
+      justifyContent="center "
       container
       sx={{ color: "white", backgroundColor: "black", py: "2rem" , bottom: 0, left: 0, right: 0,mt:20 }}
       // sx={{ position: 'fixed'}}
     >
+      <Stack spacing={6} direction="row">
+
+      
       <Grid item xs={2}></Grid>
       <Grid item xs={2} container>
         <Typography variant="h6" width="100%">
@@ -62,6 +68,7 @@ Ladkrabang, Bangkok 10520</Typography>
           </Grid>
         </Grid>
       </Grid>
+      </Stack>
     </Grid>
   );
 }

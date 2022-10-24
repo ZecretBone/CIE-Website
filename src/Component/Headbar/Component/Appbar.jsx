@@ -158,7 +158,7 @@ const ResponsiveAppBar = () => {
       </Menu>
 
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar sx={{ml:30}} disableGutters>
           
           <Typography
             variant="h6"
@@ -204,17 +204,18 @@ const ResponsiveAppBar = () => {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{
+              sx={{ 
                 display: { xs: "block", md: "none" },
               }}
             >
               {newpages.map((page) => (
                 <MenuItem
+                
                   key={page}
                   href={page.path}
                   onClick={(event)=>smalltabber(event,page.path)}
                 >
-                  <Typography textAlign="center" sx={{ color:"black" }}>{page.name}</Typography>
+                  <Typography   textAlign="center" sx={{ color:"black" }}>{page.name}</Typography>
                 </MenuItem>
               ))}
             </Menu>

@@ -19,6 +19,22 @@ export default function Contactlist() {
 
     const address1 = 'Computer Innovation Engineering Faculty of Engineering, KMITL 1 Soi Chalongkrung 1 Ladkrabang, Bangkok 10520 Thailand'
     const address2 = 'CMKL University 1 Soi Chalongkrung 1 Ladkrabang, Bangkok 10520 Thailand'
+
+    const newtab =(w)=>{
+        if(w == 'cf'){
+            window.open("https://www.facebook.com/CIEatKMITL")
+        }else if(w == 'ci'){
+            window.open("https://www.instagram.com/cie.kmitlofficial/?hl=en")
+        }else if(w == 'ce'){
+            window.open("mailto:cie@kmitl.ac.th")
+        }else if(w == 'ct'){
+            window.open("tel:0902920977")
+        }else if(w == 'at'){
+            window.open("https://www.instagram.com/cie.kmitlofficial/?hl=en")
+        }else if(w == 'ae'){
+            window.open("https://www.instagram.com/cie.kmitlofficial/?hl=en")
+        }
+    }
   return (
     <Grid container
       
@@ -35,11 +51,15 @@ export default function Contactlist() {
 <Card elevation={7} sx={{ maxWidth: 345 }}>
       
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
-            <img style={{maxWidth:40, maxHeight:40}} src={CIEicon}></img>
+        <Stack direction="row">
+        <img style={{maxWidth:50, maxHeight:50}} src={CIEicon}></img>
+        <Typography sx={{ml:2}} display="inline" gutterBottom variant="h5" component="div">
+           
            Contact Info
         </Typography>
-        <Divider variant="middle"></Divider>
+        </Stack>
+      
+        <Divider sx={{mt:3,mb:3}} variant="middle"></Divider>
         <Typography variant="body2" color="text.secondary">
           {address1}
         </Typography>
@@ -67,16 +87,16 @@ export default function Contactlist() {
             <Button variant="outlined" startIcon={<FacebookIcon />}>
                 Facebook2
             </Button> */}
-            <Button   startIcon={<CallIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            <Button onClick={()=>newtab('ct')}   startIcon={<CallIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
             +66 902920977
             </Button>
-            <Button   startIcon={<EmailIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            <Button onClick={()=>newtab('ce')}   startIcon={<EmailIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
             cie@kmitl.ac.th
             </Button>
-            <Button   startIcon={<InstagramIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            <Button  onClick={()=>newtab('ci')}  startIcon={<InstagramIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
             cie.kmitlofficial
             </Button>
-            <Button  startIcon={<FacebookIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
+            <Button onClick={()=>newtab('cf')}  startIcon={<FacebookIcon />} sx={{fontSize:10,maxWidth:'max-content'}}>
             Computer Innovation Engineering, KMITL
             </Button>
             {/* <Button  startIcon={<FacebookIcon/>} >
