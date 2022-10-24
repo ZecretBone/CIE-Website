@@ -11,6 +11,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { fontFamily } from "@mui/system";
+import studentProject from '../../Data/studentProj.json'
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -22,7 +23,7 @@ export default function Project(props) {
   if (params.type === "capstone"){
     items = capstoneProject["capstoneProject"]
   }else if (params.type === "project"){
-    items = {}
+    items = studentProject['studentProj']
   }
 
   let item = items.find( (item) => item.id === params.id)
@@ -67,9 +68,9 @@ export default function Project(props) {
       <CardActions>
         <Stack sx={{ml:1}} spacing={1}>
         
-        {item.report? <Button   disableElevation variant="contained" onClick={()=>viewer(item.report)} size="small">View Report</Button>  : <Button disabled   disableElevation variant="contained" onClick={()=>viewer(item.report)} size="small">View Report</Button>  }
-        {item.yt? <Button  disableElevation variant="contained"  onClick={()=>viewer(item.yt)} size="small">View Video</Button> : <Button disabled  disableElevation variant="contained"  onClick={()=>viewer(item.yt)} size="small">View Video</Button> }
-        {item.git? <Button disableElevation variant="contained" onClick={()=>viewer(item.git)} size="small">View Github</Button> : <Button disabled disableElevation variant="contained" onClick={()=>viewer(item.git)} size="small">View Github</Button>}
+        {item.report? <Button   disableElevation variant="text" sx={{maxWidth:'max-content'}} onClick={()=>viewer(item.report)} size="small">View Report</Button>  : <Button disabled   disableElevation variant="contained" onClick={()=>viewer(item.report)} size="small">View Report</Button>  }
+        {item.yt? <Button  disableElevation variant="text" sx={{maxWidth:'max-content'}}  onClick={()=>viewer(item.yt)} size="small">View Video</Button> : <Button disabled  disableElevation variant="contained"  onClick={()=>viewer(item.yt)} size="small">View Video</Button> }
+        {item.git? <Button disableElevation variant="text" sx={{maxWidth:'max-content'}} onClick={()=>viewer(item.git)} size="small">View Github</Button> : <Button disabled disableElevation variant="contained" onClick={()=>viewer(item.git)} size="small">View Github</Button>}
         </Stack>
         
       </CardActions>
@@ -81,10 +82,10 @@ export default function Project(props) {
       <Typography sx={{mb:'2vh'}} variant="h4" >Project Description</Typography>
       <Typography sx={{mb:'2vh'}} style={{fontSize:25}} variant="h4" >Abstract</Typography>
       <Typography  sx={{mb:'2vh'}} style={{fontSize:17}}variant="h6" >{item.abstract}</Typography>
-      <Typography  sx={{mb:'2vh'}} style={{fontSize:25}}variant="h4" >Background</Typography>
-      <Typography sx={{mb:'2vh'}}  style={{fontSize:17}}variant="h6" >{item.bg}</Typography>
-      <Typography  sx={{mb:'2vh'}} style={{fontSize:25}}variant="h4" >Objectives</Typography>
-      <Typography sx={{mb:'2vh'}}  style={{fontSize:17}}variant="h6" >{item.objective}</Typography>
+      <Typography    sx={{mb:'2vh',visibility:item.bg?'visible':'hidden'}} style={{fontSize:25}}variant="h4" >Background</Typography>
+      <Typography sx={{mb:'2vh',visibility:item.bg?'visible':'hidden'}}  style={{fontSize:17}}variant="h6" >{item.bg}</Typography>
+      <Typography  sx={{mb:'2vh',visibility:item.objective?'visible':'hidden'}} style={{fontSize:25}}variant="h4" >Objectives</Typography>
+      <Typography sx={{mb:'2vh',visibility:item.objective?'visible':'hidden'}}  style={{fontSize:17}}variant="h6" >{item.objective}</Typography>
     </Stack> 
   </Grid>
     </Grid>

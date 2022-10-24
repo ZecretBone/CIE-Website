@@ -7,8 +7,8 @@
     },
     {
         "id": "2",
-        "name": "SOL",
-        "description": "Self Organizing Library",
+        "name": "Self Organizing Library (SOL)",
+        "description": "A machine that automatically withdraw and deposit books also can be checked online",
         "link": "https://docs.google.com/presentation/d/1aYVvy5M218LM0EADMfYQIe2DxUb_V6tt/edit?usp=sharing&ouid=107856448439285625375&rtpof=true&sd=true",
         "img": "/stdproj/02.png"
     },
@@ -21,21 +21,21 @@
     },{
         "id": "4",
         "name": "Canvasky",
-        "description": "Painting application",
+        "description": "Painting application using hand gesture and voice control",
         "link": "https://drive.google.com/file/d/14IV5043qn12JdbqRHwoBmUEXSjDwmnSC/view?usp=sharing",
         "img": "/stdproj/04.jpg"
     },
     {
         "id": "5",
         "name": "In Your Place",
-        "description": "Mobile AR game",
+        "description": "Mobile AR game about exploring and escaping from a ghost",
         "link": "https://www.youtube.com/watch?v=NFxNLcJjo30",
         "img": "/stdproj/05.jpg"
     },
     {
         "id": "6",
         "name": "Pentest Project",
-        "description": "pentest project for computer system course",
+        "description": "pentest project for computer system course using cross-site scripting",
         "link": "https://www.youtube.com/watch?v=rmeODBEj1zU",
         "img": "/stdproj/06.jpg"
     },

@@ -39,7 +39,7 @@ items["capstoneProject"].map((item, i) => (
 function Item(props) {
   return (
     <Link to= {`/student-work/capstone/${ props.item.id }`} >
-    <Card sx={{ Width: 345 }}>
+    <Card sx={{ Width: 345,height:200 }}>
       <CardMedia component="img" height="140" image={props.item.img} />
       <ThemeProvider theme={theme}>
         <CardContent>

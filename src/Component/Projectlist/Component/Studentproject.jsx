@@ -5,11 +5,38 @@ import CardMedia from "@mui/material/CardMedia";
 import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import { ThemeProvider } from "styled-components";
 import { Link } from "react-router-dom";
+import allitems from '../../../Data/studentProj.json'
+import { CardActionArea } from '@mui/material';
+import Box from '@mui/material/Box';
+import Alert from '@mui/material/Alert';
+import IconButton from '@mui/material/IconButton';
+import Collapse from '@mui/material/Collapse';
+import Button from '@mui/material/Button';
+import CloseIcon from '@mui/icons-material/Close';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
 
+
+
+
+
 export default function Studentproject(props) {
+
+  const [failure,setFail]= React.useState(false)
+
+
+  const viewnewtab=(link)=>{
+    if(link){
+      setFail(false)
+      window.open(link)
+    }else{
+      setFail(true)
+    }
+    
+  }
+  
+  
   var items = [
     {
       id: "1",
@@ -61,8 +88,34 @@ export default function Studentproject(props) {
     }
   ];
 
+  items = allitems['studentProj']
+
+  
+
   return (
-    <Grid
+    <Box >
+      <Collapse in={failure}>
+        <Alert
+        variant="filled"
+        severity="error"
+          action={
+            <IconButton
+              aria-label="close"
+              color="inherit"
+              size="small"
+              onClick={() => {
+                setFail(false);
+              }}
+            >
+              <CloseIcon fontSize="inherit" />
+            </IconButton>
+          }
+          sx={{ mb: 2 }}
+        >
+          Sorry, This project have no external link
+        </Alert>
+      </Collapse>
+      <Grid
       container
       spacing={3}
       columns={{ xs: 6, sm:12, md:12 }}
@@ -70,31 +123,37 @@ export default function Studentproject(props) {
       alignItems="center"
       justifyContent="left "
     >
-      {items.map((item, i) => (
+      {items.map((item) => (
         <Grid item xs={6}>
-          <Item key={i} item={item} />
-        </Grid>
-      ))}
-    </Grid>
-  );
-}
-
-function Item(props) {
-  return (
-    <Link to= {`/student-work/project/${ props.item.id }`} >
-    <Card sx={{ Width: 345 }}>
-      <CardMedia component="img" height="140" image={props.item.img} />
+          <Card sx={{ Width: 345,height:300 }}>
+      <CardActionArea onClick={()=>viewnewtab(item.link)}>
+      <CardMedia component="img" height="140" image={item.img} />
       <ThemeProvider theme={theme}>
         <CardContent>
           <Typography variant="h4" component="div">
-            <strong>{props.item.name}</strong>
+            <strong>{item.name}</strong>
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {props.item.description}
+            {item.description}
           </Typography>
         </CardContent>
       </ThemeProvider>
+      </CardActionArea>
     </Card>
-    </Link>
+        </Grid>
+      ))}
+    </Grid>
+    </Box>
+    
   );
 }
+
+// function Item(props) {
+
+  
+//   return (
+    
+    
+    
+//   );
+// }
