@@ -11,6 +11,7 @@ import Faq from "./Faq";
 import Footer from "./Footer";
 import Topbar from "./Topbar";
 import AboutUs from "./AboutUs";
+import Programguide from "./ProgramGuide";
 
 export {
   Headbar,
@@ -26,4 +27,5 @@ export {
   Footer,
   Topbar,
   AboutUs,
+  Programguide
 };
