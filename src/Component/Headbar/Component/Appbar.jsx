@@ -14,6 +14,9 @@ import { Link } from "react-router-dom";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from '@mui/icons-material/Email';
 
+import CIEicon from './CIE_logo.svg'
+import CIEicon2 from './image2vector.svg'
+
 const pages = [
   "Program Guide",
   "Course",
@@ -172,8 +175,8 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-            <img src="./CIE_logo.png" ></img>
+            {/* <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} /> */}
+            <img style={{maxWidth:40, maxHeight:40}}  src={CIEicon2} ></img>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
@@ -233,7 +236,8 @@ const ResponsiveAppBar = () => {
               textDecoration: "none",
             }}
           >
-            <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+            {/* <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} /> */}
+            <img style={{maxWidth:40, maxHeight:40}}  src={CIEicon2} ></img>
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {newpages.map((page) => (
