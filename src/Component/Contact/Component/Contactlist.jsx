@@ -14,7 +14,8 @@ import Divider from '@mui/material/Divider';
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from '@mui/icons-material/Email';
 import CIEicon from './image2vector.svg'
-//import AICEicon from './aice.svg'
+import AICEicon from './Aicelogo2.svg'
+import AICEicon2 from './Aicelogo.png'
 
 export default function Contactlist() {
 
@@ -99,7 +100,7 @@ export default function Contactlist() {
       
       <CardContent>
         <Stack direction="row">
-        <img style={{maxWidth:50, maxHeight:50}} src={CIEicon}></img>
+        <img style={{maxWidth:80, maxHeight:80}} src={AICEicon2}></img>
         <Typography sx={{ml:2}} display="inline" gutterBottom variant="h5" component="div">
            
            Contact Info

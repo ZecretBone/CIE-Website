@@ -49,9 +49,9 @@ export default function Pagefooter() {
         </Typography>
         <Grid item xs={12}>
           <Grid container direction="column" >
-            <Typography onClick={()=>newtab('ce')} variant="p"> <EmailIcon  sx={{ px:"0.1rem" }}></EmailIcon> cie@kmitl.ac.th</Typography>
-            <Typography onClick={()=>newtab('ct')} variant="p"><CallIcon  sx={{ px:"0.1rem" }}></CallIcon> +66 902920977</Typography>
-            <Typography onClick={()=>newtab('cfax')} variant="p"><FaxIcon  sx={{ px:"0.1rem" }}></FaxIcon> +66 658785000</Typography>     
+            <Typography style={{ cursor:"pointer"}} onClick={()=>newtab('ce')} variant="p"> <EmailIcon  sx={{ px:"0.1rem" }}></EmailIcon> cie@kmitl.ac.th</Typography>
+            <Typography style={{ cursor:"pointer"}} onClick={()=>newtab('ct')} variant="p"><CallIcon  sx={{ px:"0.1rem" }}></CallIcon> +66 902920977</Typography>
+            <Typography style={{ cursor:"pointer"}} onClick={()=>newtab('cfax')} variant="p"><FaxIcon  sx={{ px:"0.1rem" }}></FaxIcon> +66 658785000</Typography>     
             <Typography><IconButton onClick={()=>newtab('ci')} sx={{ color: 'white' }}><InstagramIcon  /></IconButton>  <IconButton onClick={()=>newtab('cf')} sx={{ color: 'white' }}><FacebookIcon  /></IconButton> </Typography>   
             
       {/* <IconButton onClick={()=>newtab('cf')} aria-label="facebook"> */}
@@ -83,9 +83,9 @@ Ladkrabang, Bangkok 10520</Typography>
         </Typography>
         <Grid item xs={6}>
           <Grid container direction="column">
-            <Typography variant="p">Program Guide</Typography>
-            <Typography variant="p">Home</Typography>
-            <Typography variant="p">Gallery</Typography>
+            <a href="/programguide" target="_blank"><Typography sx={{color:"white"}} variant="p">Program Guide</Typography></a>
+            <a href="/" target="_blank"><Typography sx={{color:"white"}} variant="p">Home</Typography></a>
+            <a href="/gallery" target="_blank"><Typography sx={{color:"white"}} variant="p">Gallery</Typography></a>
           </Grid>
         </Grid>
         <Grid item xs={6}>
