@@ -12,6 +12,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import { fontFamily } from "@mui/system";
 import studentProject from '../../Data/studentProj.json'
+import Divider from '@mui/material/Divider';
 
 let theme = createTheme();
 theme = responsiveFontSizes(theme);
@@ -80,6 +81,7 @@ export default function Project(props) {
     <Stack sx={{maxWidth:1000}}>
       <Typography sx={{mt:'7vh',mb:'5vh'}} variant="h3" >{item.name}</Typography>
       <Typography sx={{mb:'2vh'}} variant="h4" >Project Description</Typography>
+      <Divider sx={{mb:'2vh'}} variant="middle"></Divider>
       <Typography sx={{mb:'2vh'}} style={{fontSize:25}} variant="h4" >Abstract</Typography>
       <Typography  sx={{mb:'2vh'}} style={{fontSize:17}}variant="h6" >{item.abstract}</Typography>
       <Typography    sx={{mb:'2vh',visibility:item.bg?'visible':'hidden'}} style={{fontSize:25}}variant="h4" >Background</Typography>

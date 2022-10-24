@@ -10,6 +10,8 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import faqbanner from './01headfaq.png'
+import Box from '@mui/material/Box';
+
 
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: '100%',
@@ -62,26 +64,28 @@ export default function Faqlist() {
 
 
   return (
-    
-    <Grid
+    <Box>
+      <img style={{maxHeight:'50%', maxWidth:'100%'}} src={faqbanner}></img>
+<Grid
     container
       
       alignItems="center"
       justifyContent="center "
+      sx={{pl:'10vw',pr:'10vw'}}
     >
       
       <Stack>
       {/* <Typography sx={{mt:3.5}} variant="h3">FREQUENTLY ASKED QUESTIONS</Typography> */}
-      <img style={{maxHeight:500, maxWidth:'100%'}} src={faqbanner}></img>
+      
 
       <Card elevation={0} sx={{ minWidth: 275 }}>
       <CardContent>
       <Grid container>
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       How can I apply for CIE?
       </Grid>
       
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       Unfortunately, our facalty does not available to apply for now.
       </Grid>
     </Grid>
@@ -89,48 +93,48 @@ export default function Faqlist() {
       
     </Card>
 
-    <Divider/>
+    <Divider variant="middle"/>
 
-    <Card elevation={0} sx={{ minWidth: 275 }}>
+    <Card elevation={0} sx={{ minWidth: 275 }} >
       <CardContent>
       <Grid container>
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       What is the difference between Computer Innovation Engineering and Computer Engineering?
       </Grid>
       
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       Computer Engineering (CE) is the roots of programming, so the program will focus more on computer languages, circuits and components of computers. However, Computer Innovation Engineering (CIE) studies both software and hardware, and all the courses are taught in english. CIE will not learn as deep as CE in terms of programming languages, since CIE will be based on implementing programming languages to adapt to innovative projects.
       </Grid>
     </Grid>
       </CardContent>
       
     </Card>
-    <Divider/>
+    <Divider variant="middle"/>
 
     <Card elevation={0} sx={{ minWidth: 275 }}>
       <CardContent>
       <Grid container>
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       How will programming be useful in the future?
       </Grid>
       
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       Nowadays, the world is based on technology. This means that innovation and programming languages are very important to develop future innovative products, such as robots, automation machines, self-driving cars, and so on.
       </Grid>
     </Grid>
       </CardContent>
       
     </Card>
-    <Divider/>
+    <Divider variant="middle"/>
 
     <Card elevation={0} sx={{ minWidth: 275 }}>
       <CardContent>
       <Grid container>
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       I want to be fluent in coding in a short period of time, how do I achieve that?
       </Grid>
       
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       Pay attention in class, try to do all the assignments and homework to understand coding better. If you really want to be fluent in programming languages, it is a good idea to practice the programming languages frequently.
       </Grid>
     </Grid>
@@ -138,16 +142,16 @@ export default function Faqlist() {
       
     </Card>
 
-    <Divider/>
+    <Divider variant="middle"/>
 
     <Card elevation={0} sx={{ minWidth: 275 }}>
       <CardContent>
       <Grid container>
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       How is the learning environment in KMITL?
       </Grid>
       
-      <Grid item xs>
+      <Grid item xs style={{fontSize:17}}>
       Studying at KMITL teaches you how to be responsive, because KMITL is based on practical studies. Other than that, there are many clubs and activities that students in KMITL can participate, such as basketball club, musical club, photography club, electronic club and so on. The study environment in KMITL is pretty interesting, because there are many facilities, such as fitness, football field, basketball court, badminton court, canteen, affordable food price for students, library, places where you can work quietly, and so on
       </Grid>
     </Grid>
@@ -164,6 +168,8 @@ export default function Faqlist() {
       </Typography>
       </Stack>
     </Grid>
+    </Box>
+    
     // <Grid container>
     //   <Grid item xs>
     //     {content}
