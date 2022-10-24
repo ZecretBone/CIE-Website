@@ -5,6 +5,8 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
+    "@fontsource/inter": "^4.5.14",
+    "@fontsource/mukta": "^4.5.10",
     "@fontsource/roboto": "^4.5.8",
     "@googlemaps/react-wrapper": "^1.1.35",
     "@mui/icons-material": "^5.10.9",

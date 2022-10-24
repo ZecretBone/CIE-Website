@@ -13,6 +13,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import { Link } from "react-router-dom";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from '@mui/icons-material/Email';
+import { styled } from '@mui/material/styles';
 
 import CIEicon from './CIE_logo.svg'
 import CIEicon2 from './image2vector.svg'
@@ -58,6 +59,14 @@ const newpages = [
     path: "/contact-us",
   },
 ];
+
+const Typ = styled(Typography)(({ theme }) => ({
+    textDecoration: 'none',
+           '&:hover': {
+            opacity: '75%'
+       
+       }
+  }));
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -112,23 +121,23 @@ const ResponsiveAppBar = () => {
           </Typography>
         </Link> */}
         <a href= "tel:0902920977" target="_blank">
-          <Typography
+          <Typ
             display="flex"
             sx={{ color: "white", textAlign: "center", backgroundImage:"none",pr:"1rem"}}
           >
             <CallIcon sx={{ px:"0.5rem" }}></CallIcon>
             +66 902920977
-          </Typography>
+          </Typ>
           </a>
 
         <a href= "mailto:cie@kmitl.ac.th" target="_blank">
-          <Typography
+          <Typ
             display="flex"
             sx={{ color: "white", textAlign: "center", backgroundImage:"none"}}
           >
             <EmailIcon  sx={{ px:"0.5rem" }}></EmailIcon>
             cie@kmitl.ac.th
-          </Typography>
+          </Typ>
         </a>
       </Typography>
      

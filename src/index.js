@@ -4,15 +4,31 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import RouterPath from "./Router/Router";
+import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
 //import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
+import "@fontsource/mukta";
+import "@fontsource/inter";
+
+const THEME = createTheme({
+  fontFamily: '"Inter", sans-serif',
+  typography: {
+    fontFamily: '"Inter", sans-serif',
+    //  "fontSize": 14,
+    //  "fontWeightLight": 300,
+    //  "fontWeightRegular": 400,
+    //  "fontWeightMedium": 500
+  },
+});
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <RouterPath />
-    </BrowserRouter>
+    <ThemeProvider theme={THEME}>
+      <BrowserRouter>
+        <RouterPath />
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 
