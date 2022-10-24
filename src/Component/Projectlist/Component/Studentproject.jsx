@@ -13,24 +13,24 @@ export default function Studentproject(props) {
   var items = [
     {
       id: "1",
-      name: "AICE",
-      description: "Probably the most random thing you have ever seen!",
+      name: "Babylicious",
+      description: "UXUI design application for new mom",
       link: "",
-      img: "",
+      img: "/stdproj/01.png",
     },
     {
       id: "2",
-      name: "CIE",
-      description: "Hello World!",
+      name: "SOL",
+      description: "Self Organizing Library",
       link: "",
-      img: "",
+      img: "/stdproj/02.png",
     },
     {
-      id: "2",
-      name: "CIE",
-      description: "Hello World!",
+      id: "3",
+      name: "K-Rider",
+      description: "Mobile application for transporting around KMITL",
       link: "",
-      img: "",
+      img: "/stdproj/03.png",
     },
   ];
 
