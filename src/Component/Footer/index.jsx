@@ -16,7 +16,7 @@ import { lime } from '@mui/material/colors';
 const Typ = styled(Typography)(({ theme }) => ({
   textDecoration: 'none',
          '&:hover': {
-          opacity: '50%'
+          opacity: '75%'
      
      }
 }));
@@ -74,7 +74,7 @@ export default function Pagefooter() {
             <Typ  sx={{maxWidth:'max-content'}} style={{ cursor:"pointer"}} onClick={()=>newtab('ce')} variant="p"> <EmailIcon  sx={{ px:"0.1rem" }}></EmailIcon> cie@kmitl.ac.th</Typ>
             <Typ sx={{maxWidth:'max-content'}} style={{ cursor:"pointer"}} onClick={()=>newtab('ct')} variant="p"><CallIcon  sx={{ px:"0.1rem" }}></CallIcon> +66 902920977</Typ>
             <Typ sx={{maxWidth:'max-content'}} style={{ cursor:"pointer"}} onClick={()=>newtab('cfax')} variant="p"><FaxIcon  sx={{ px:"0.1rem" }}></FaxIcon> +66 658785000</Typ>     
-            <Typ><IconButton onClick={()=>newtab('ci')} sx={{ color: 'white' }}><InstagramIcon  /></IconButton>  <IconButton onClick={()=>newtab('cf')} sx={{ color: 'white' }}><FacebookIcon  /></IconButton> </Typ>   
+            <Typography><IconButton onClick={()=>newtab('ci')} sx={{ color: 'white' }}><InstagramIcon  /></IconButton>  <IconButton onClick={()=>newtab('cf')} sx={{ color: 'white' }}><FacebookIcon  /></IconButton> </Typography>   
             
       {/* <IconButton onClick={()=>newtab('cf')} aria-label="facebook"> */}
           
