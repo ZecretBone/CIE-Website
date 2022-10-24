@@ -9,7 +9,6 @@ import FeatureCourses from "./FeatureCourses";
 import Contact from "./Contact";
 import Faq from "./Faq";
 import Footer from "./Footer";
-import Topbar from "./Topbar";
 import AboutUs from "./AboutUs";
 
 export {
@@ -24,6 +23,5 @@ export {
   Contact,
   Faq,
   Footer,
-  Topbar,
   AboutUs,
 };

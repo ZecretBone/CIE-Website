@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Typography, Grid, Box } from "@mui/material";
-import { createTheme, responsiveFontSizes } from "@mui/material/styles";
+import { createTheme, responsiveFontSizes,styled } from "@mui/material/styles";
 import { Link } from "react-router-dom";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import Stack from '@mui/material/Stack';
@@ -11,7 +11,27 @@ import EmailIcon from '@mui/icons-material/Email';
 import IconButton from '@mui/material/IconButton';
 import { lime } from '@mui/material/colors';
 
+
+
+const Typ = styled(Typography)(({ theme }) => ({
+  textDecoration: 'none',
+         '&:hover': {
+          opacity: '50%'
+     
+     }
+}));
+
+const TypL = styled(Typography)(({ theme }) => ({
+  
+         '&:hover': {
+          textDecoration: 'underline'
+     
+     }
+}));
+
 export default function Pagefooter() {
+
+  //const classes = useStyles
 
   const newtab =(w)=>{
     if(w == 'cf'){
@@ -30,6 +50,8 @@ export default function Pagefooter() {
         window.open("fax:658785000")
     }
 }
+
+
   
   return (
     <Grid
@@ -49,10 +71,10 @@ export default function Pagefooter() {
         </Typography>
         <Grid item xs={12}>
           <Grid container direction="column" >
-            <Typography style={{ cursor:"pointer"}} onClick={()=>newtab('ce')} variant="p"> <EmailIcon  sx={{ px:"0.1rem" }}></EmailIcon> cie@kmitl.ac.th</Typography>
-            <Typography style={{ cursor:"pointer"}} onClick={()=>newtab('ct')} variant="p"><CallIcon  sx={{ px:"0.1rem" }}></CallIcon> +66 902920977</Typography>
-            <Typography style={{ cursor:"pointer"}} onClick={()=>newtab('cfax')} variant="p"><FaxIcon  sx={{ px:"0.1rem" }}></FaxIcon> +66 658785000</Typography>     
-            <Typography><IconButton onClick={()=>newtab('ci')} sx={{ color: 'white' }}><InstagramIcon  /></IconButton>  <IconButton onClick={()=>newtab('cf')} sx={{ color: 'white' }}><FacebookIcon  /></IconButton> </Typography>   
+            <Typ  sx={{maxWidth:'max-content'}} style={{ cursor:"pointer"}} onClick={()=>newtab('ce')} variant="p"> <EmailIcon  sx={{ px:"0.1rem" }}></EmailIcon> cie@kmitl.ac.th</Typ>
+            <Typ sx={{maxWidth:'max-content'}} style={{ cursor:"pointer"}} onClick={()=>newtab('ct')} variant="p"><CallIcon  sx={{ px:"0.1rem" }}></CallIcon> +66 902920977</Typ>
+            <Typ sx={{maxWidth:'max-content'}} style={{ cursor:"pointer"}} onClick={()=>newtab('cfax')} variant="p"><FaxIcon  sx={{ px:"0.1rem" }}></FaxIcon> +66 658785000</Typ>     
+            <Typ><IconButton onClick={()=>newtab('ci')} sx={{ color: 'white' }}><InstagramIcon  /></IconButton>  <IconButton onClick={()=>newtab('cf')} sx={{ color: 'white' }}><FacebookIcon  /></IconButton> </Typ>   
             
       {/* <IconButton onClick={()=>newtab('cf')} aria-label="facebook"> */}
           
@@ -83,9 +105,9 @@ Ladkrabang, Bangkok 10520</Typography>
         </Typography>
         <Grid item xs={6}>
           <Grid container direction="column">
-            <a href="/programguide" target="_blank"><Typography sx={{color:"white"}} variant="p">Program Guide</Typography></a>
-            <a href="/" target="_blank"><Typography sx={{color:"white"}} variant="p">Home</Typography></a>
-            <a href="/gallery" target="_blank"><Typography sx={{color:"white"}} variant="p">Gallery</Typography></a>
+            <a style={{maxWidth:"max-content"}} href="/programguide" ><TypL sx={{color:"white"}} variant="p">Program Guide</TypL></a>
+            <a style={{maxWidth:"max-content"}} href="/" ><TypL sx={{color:"white"}} variant="p">Home</TypL></a>
+            <a style={{maxWidth:"max-content"}} href="/gallery" ><TypL sx={{color:"white"}} variant="p">Gallery</TypL></a>
           </Grid>
         </Grid>
         <Grid item xs={6}>

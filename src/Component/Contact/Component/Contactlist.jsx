@@ -16,6 +16,9 @@ import EmailIcon from '@mui/icons-material/Email';
 import CIEicon from './image2vector.svg'
 import AICEicon from './Aicelogo2.svg'
 import AICEicon2 from './Aicelogo.png'
+import contactbanner from './01homecontact.png'
+import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 
 export default function Contactlist() {
 
@@ -39,13 +42,12 @@ export default function Contactlist() {
     }
   return (
     <Grid container
-      
     alignItems="center"
     justifyContent="center ">
-        <Stack sx={{mt:3.5}}  spacing={1.5}>
-
         
-        <Typography variant="h3">
+        <Stack  sx={{mt:3.5}}  spacing={1.5}>
+
+        <Typography   variant="h3">
             CONTACT US
         </Typography>
     <Stack direction="row" spacing={1.5}>
@@ -100,7 +102,7 @@ export default function Contactlist() {
       
       <CardContent>
         <Stack direction="row">
-        <img style={{maxWidth:80, maxHeight:80}} src={AICEicon2}></img>
+        <img style={{maxWidth:65, maxHeight:65}} src={AICEicon2}></img>
         <Typography sx={{ml:2}} display="inline" gutterBottom variant="h5" component="div">
            
            Contact Info

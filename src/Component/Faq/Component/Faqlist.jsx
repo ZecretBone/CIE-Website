@@ -9,6 +9,7 @@ import CardContent from '@mui/material/CardContent';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
+import faqbanner from './01headfaq.png'
 
 const Grid = styled(MuiGrid)(({ theme }) => ({
   width: '100%',
@@ -70,8 +71,8 @@ export default function Faqlist() {
     >
       
       <Stack>
-      <Typography sx={{mt:3.5}} variant="h3">FREQUENTLY ASKED QUESTIONS</Typography>
-
+      {/* <Typography sx={{mt:3.5}} variant="h3">FREQUENTLY ASKED QUESTIONS</Typography> */}
+      <img style={{maxHeight:500, maxWidth:'100%'}} src={faqbanner}></img>
 
       <Card elevation={0} sx={{ minWidth: 275 }}>
       <CardContent>
