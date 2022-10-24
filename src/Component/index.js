@@ -10,6 +10,7 @@ import Contact from "./Contact";
 import Faq from "./Faq";
 import Footer from "./Footer";
 import AboutUs from "./AboutUs";
+import Programguide from "./ProgramGuide";
 
 export {
   Headbar,
@@ -24,4 +25,5 @@ export {
   Faq,
   Footer,
   AboutUs,
+  Programguide
 };
