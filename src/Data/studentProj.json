@@ -1,0 +1,53 @@
+{   "studentProj": [
+    {
+        "id": "1",
+        "name": "Babylicious",
+        "description": "UXUI design application for new mom",
+        "img": "/stdproj/01.png"
+    },
+    {
+        "id": "2",
+        "name": "SOL",
+        "description": "Self Organizing Library",
+        "link": "https://docs.google.com/presentation/d/1aYVvy5M218LM0EADMfYQIe2DxUb_V6tt/edit?usp=sharing&ouid=107856448439285625375&rtpof=true&sd=true",
+        "img": "/stdproj/02.png"
+    },
+    {
+        "id": "3",
+        "name": "K-Rider",
+        "description": "Mobile application for transporting around KMITL",
+        "link": "https://youtu.be/NdgAWkGnyJ8",
+        "img": "/stdproj/03.png"
+    },{
+        "id": "4",
+        "name": "Canvasky",
+        "description": "Painting application",
+        "link": "https://drive.google.com/file/d/14IV5043qn12JdbqRHwoBmUEXSjDwmnSC/view?usp=sharing",
+        "img": "/stdproj/04.jpg"
+    },
+    {
+        "id": "5",
+        "name": "In Your Place",
+        "description": "Mobile AR game",
+        "link": "https://www.youtube.com/watch?v=NFxNLcJjo30",
+        "img": "/stdproj/05.jpg"
+    },
+    {
+        "id": "6",
+        "name": "Pentest Project",
+        "description": "pentest project for computer system course",
+        "link": "https://www.youtube.com/watch?v=rmeODBEj1zU",
+        "img": "/stdproj/06.jpg"
+    },
+    {
+        "id": "7",
+        "name": "Musiege",
+        "description": "You can listen to the music together with Musiege",
+        "link": "https://drive.google.com/file/d/14VmajLTqsRdLjzYdQdxevk9MlzXTv2gn/view?usp=sharing",
+        "img": "/stdproj/07.jpg"
+    }
+]
+}
+
+        
+    
