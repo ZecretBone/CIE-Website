@@ -31,7 +31,34 @@ export default function Studentproject(props) {
       description: "Mobile application for transporting around KMITL",
       link: "",
       img: "/stdproj/03.png",
+    },{
+      id: "4",
+      name: "Canvasky",
+      description: "Painting application",
+      link: "",
+      img: "/stdproj/04.jpg",
     },
+    {
+      id: "5",
+      name: "In Your Place",
+      description: "Mobile AR game",
+      link: "",
+      img: "/stdproj/05.jpg",
+    },
+    {
+      id: "6",
+      name: "Pentest Project",
+      description: "pentest project for computer system course",
+      link: "",
+      img: "/stdproj/06.jpg",
+    },
+    {
+      id: "7",
+      name: "Musiege",
+      description: "You can listen to the music together with Musiege",
+      link: "",
+      img: "/stdproj/07.jpg",
+    }
   ];
 
   return (
