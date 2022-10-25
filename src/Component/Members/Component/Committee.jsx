@@ -35,6 +35,7 @@ export default function Committee() {
     {
       name: "Dr. Chutimet Srinilta",
       pic: "https://uploads-ssl.webflow.com/5fcda2e002c79b4f3d519a46/60336e78ccc97512c5fc523a_timeline_20201115_215130.jpg",
+    // pic:"./IMG_0302.png",
       content: "Asst. Professor",
     },
   ];
