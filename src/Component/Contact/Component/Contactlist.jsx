@@ -38,7 +38,7 @@ export default function Contactlist() {
   };
   return (
     <div sx={{ zIndex: 1 }}>
-      <Box display="flex" sx={{ px: "10vw" }}>
+      <Box display="flex" sx={{ px: "10vw", pb:"8rem" }}>
         <Stack spacing={1.5}>
           <Typography
             variant="h4"
