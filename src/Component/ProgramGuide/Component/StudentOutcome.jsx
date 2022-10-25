@@ -4,10 +4,12 @@ export default function StudentOutcome() {
     <Typography
       sx={{ backgroundColor: "#FFB03F", mt: "1rem", py: "4rem", px: "10vw" }}
     >
-      <Typography variant="h3" sx={{ color: "#3C3C3C", pb:"3rem" }}>
+      <Typography variant="h3" sx={{ color: "#3C3C3C", pb:"3rem" ,fontWeight:700
+              ,fontFamily:'"Mukta", sans-serif'}}>
         <strong>Student Outcomes</strong>
       </Typography>
-      <Typography variant="subtitle1" sx={{ color: "#3C3C3C" }}>
+      <Typography variant="subtitle1" sx={{ color: "#3C3C3C",fontWeight:600
+              ,fontFamily:'"Mukta", sans-serif' }}>
         <div>
           The program has the following outcomes which adhere to ABET student
           outcomes for the engineering program.

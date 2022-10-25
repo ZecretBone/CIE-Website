@@ -12,12 +12,12 @@ export default function AboutUs() {
         pl="10vw"
         pr="5vw"
       >
-      <Typography variant="h4" pb="1.5rem" ><strong>ABOUT US</strong></Typography>
+      <Typography sx={{fontWeight:700}} variant="h4" pb="1.5rem" >ABOUT US</Typography>
       
-      <Typography paragraph>
-        <Typography color="orange" display="inline">
+      <Typography sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600,color:'#3C3C3C'}} paragraph>
+        <Typography sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600}}  color="#F3791D" display="inline">
           <strong>The Computer Innovation Engineering Program (CIE)</strong>
-        </Typography>{" "}
+        </Typography >{" "}
         is the platform for academic advancement of the 21st century. By
         combining theoretical foundations with hands-on experience and
         project-based learning, the students will learn the computing skills

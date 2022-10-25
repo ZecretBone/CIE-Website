@@ -77,13 +77,13 @@ export default function Faqlist() {
             <CardContent>
               <Grid container>
                 <Grid item xs={4}>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" sx={{ fontWeight:400}}>
                     How can I apply for CIE?
                   </Typography>
                 </Grid>
                 <Grid item xs={1}></Grid>
                 <Grid item xs>
-                  <Typography variant="p">
+                  <Typography variant="p" sx={{ fontWeight:400}}>
                     Unfortunately, our faculty does not available to apply for
                     now.
                   </Typography>
@@ -98,7 +98,7 @@ export default function Faqlist() {
             <CardContent>
               <Grid container direction="row">
                 <Grid item xs={4}>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" sx={{ fontWeight:400}}>
                     What is the difference between Computer Innovation
                     Engineering and Computer Engineering?
                   </Typography>
@@ -125,13 +125,13 @@ export default function Faqlist() {
             <CardContent>
               <Grid container direction="row">
                 <Grid item xs={4}>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" sx={{ fontWeight:400}}>
                     How will programming be useful in the future?
                   </Typography>
                 </Grid>
                 <Grid item xs={1}></Grid>
                 <Grid item xs>
-                  <Typography variant="p">
+                  <Typography variant="p" sx={{ fontWeight:400}}>
                     Nowadays, the world is based on technology. This means that
                     innovation and programming languages are very important to
                     develop future innovative products, such as robots,
@@ -147,13 +147,13 @@ export default function Faqlist() {
             <CardContent>
               <Grid container direction="row">
                 <Grid item xs={4}>
-                  <Typography variant="subtitle1">
+                  <Typography variant="subtitle1" sx={{ fontWeight:400}}>
                   I want to be fluent in coding in a short period of time, how
                   do I achieve that?</Typography>
                 </Grid>
                 <Grid item xs={1}></Grid>
                 <Grid item xs>
-                  <Typography variant="p">
+                  <Typography variant="p" sx={{ fontWeight:400}}>
                   Pay attention in class, try to do all the assignments and
                   homework to understand coding better. If you really want to be
                   fluent in programming languages, it is a good idea to practice
@@ -169,11 +169,11 @@ export default function Faqlist() {
             <CardContent>
               <Grid container direction="row">
                 <Grid item xs={4}>
-                  <Typography variant="subtitle1">How is the learning environment in KMITL?</Typography>
+                  <Typography variant="subtitle1" sx={{ fontWeight:400}}>How is the learning environment in KMITL?</Typography>
                 </Grid>
                 <Grid xs={1}></Grid>
                 <Grid item xs>
-                  <Typography variant="p">
+                  <Typography variant="p" sx={{ fontWeight:400}}>
                   Studying at KMITL teaches you how to be responsive, because
                   KMITL is based on practical studies. Other than that, there
                   are many clubs and activities that students in KMITL can
@@ -189,7 +189,7 @@ export default function Faqlist() {
             </CardContent>
           </Card>
 
-          <Typography variant="subtitle1" sx={{ pb:"2rem" }}>
+          <Typography variant="subtitle1" sx={{ pb:"2rem", fontWeight:400 }}>
             Can't find what you are looking for?
             <Button onClick={tocontact}>Contact Us</Button>
           </Typography>

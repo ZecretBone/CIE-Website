@@ -26,7 +26,8 @@ export default function PossibleCareer() {
           <Typography
             variant="subtitle1"
             color="white"
-            sx={{ alignItems: "center", justifyContent: "left" }}
+            sx={{ alignItems: "center", justifyContent: "left" ,fontWeight:500
+            ,fontFamily:'"Mukta", sans-serif'}}
           >
             After completing the program, the graduates can pursue any of the
             following careers:

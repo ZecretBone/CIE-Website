@@ -19,8 +19,9 @@ export default function Members() {
           justifyContent="left"
           mt="2rem"
           px="10vw"
+          sx={{fontWeight:700}}
         >
-          <strong>MEET OUR FACULTY</strong>
+          MEET OUR FACULTY
         </Typography>
       </div>
       <Committee></Committee>

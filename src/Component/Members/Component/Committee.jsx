@@ -68,11 +68,11 @@ export default function Committee() {
               sx={{ objectFit: "contain" }}
             />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div">
-                <strong>{each.name}</strong>
+              <Typography gutterBottom variant="h6" component="div" sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600,color:'#3C3C3C'}}>
+                {each.name}
               </Typography>
-              <Typography variant="subtitle2" color="orange">
-                <strong><i>{each.content}</i></strong>
+              <Typography variant="subtitle2" color="#F3791D" sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600}}>
+                <i>{each.content}</i>
               </Typography>
             </CardContent>
           </Card>

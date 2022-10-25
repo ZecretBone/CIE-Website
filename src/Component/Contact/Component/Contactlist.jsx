@@ -44,6 +44,7 @@ export default function Contactlist() {
             variant="h4"
             color="white"
             sx={{ mt: "15rem", pb: "3rem" }}
+
           >
             <strong>CONTACT US</strong>
           </Typography>
@@ -69,7 +70,7 @@ export default function Contactlist() {
                   </Grid>
                   <Grid item xs={8}>
                     <Typography
-                      sx={{ ml: 2 }}
+                      sx={{ ml: 2 ,fontWeight:600}}
                       variant="h5"
                     >
                       Contact Info
@@ -91,28 +92,28 @@ export default function Contactlist() {
                     <Button
                       onClick={() => newtab("ct")}
                       startIcon={<CallIcon />}
-                      sx={{ fontSize: 10, maxWidth: "max-content" }}
+                      sx={{ fontSize: 10, maxWidth: "max-content" ,fontWeight:500}}
                     >
                       +66 902920977
                     </Button>
                     <Button
                       onClick={() => newtab("ce")}
                       startIcon={<EmailIcon />}
-                      sx={{ fontSize: 10, maxWidth: "max-content" }}
+                      sx={{ fontSize: 10, maxWidth: "max-content",fontWeight:500 }}
                     >
                       cie@kmitl.ac.th
                     </Button>
                     <Button
                       onClick={() => newtab("ci")}
                       startIcon={<InstagramIcon />}
-                      sx={{ fontSize: 10, maxWidth: "max-content" }}
+                      sx={{ fontSize: 10, maxWidth: "max-content",fontWeight:500 }}
                     >
                       cie.kmitlofficial
                     </Button>
                     <Button
                       onClick={() => newtab("cf")}
                       startIcon={<FacebookIcon />}
-                      sx={{ fontSize: 10, maxWidth: "max-content" }}
+                      sx={{ fontSize: 10, maxWidth: "max-content",fontWeight:500 }}
                     >
                       Computer Innovation Engineering, KMITL
                     </Button>
@@ -142,7 +143,7 @@ export default function Contactlist() {
                   </Grid>
                   <Grid item xs={8}>
                     <Typography
-                      sx={{ ml: 2 }}
+                      sx={{ ml: 2,fontWeight:600 }}
                       variant="h5"
                     >
                       Contact Info
@@ -154,7 +155,7 @@ export default function Contactlist() {
                 <Typography
                   variant="body2"
                   color="text.secondary"
-                  sx={{ pb: "1rem" }}
+                  sx={{ pb: "1rem",fontWeight:400 }}
                 >
                   <div>CMKL University</div>
                   <div>1 Soi Chalongkrung 1</div>
@@ -168,14 +169,14 @@ export default function Contactlist() {
                     <Button
                       onClick={() => newtab("at")}
                       startIcon={<CallIcon />}
-                      sx={{ fontSize: 10, maxWidth: "max-content" }}
+                      sx={{ fontSize: 10, maxWidth: "max-content",fontWeight:500 }}
                     >
                       +66 658785000
                     </Button>
                     <Button
                       onClick={() => newtab("ae")}
                       startIcon={<EmailIcon />}
-                      sx={{ fontSize: 10, maxWidth: "max-content" }}
+                      sx={{ fontSize: 10, maxWidth: "max-content",fontWeight:500 }}
                     >
                       info@cmkl.ac.th
                     </Button>

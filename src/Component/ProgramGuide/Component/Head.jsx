@@ -9,7 +9,7 @@ export default function Head() {
           image="/programguide/01head.png"
         />
       </Card>
-      <Typography sx={{ px:"10vw", py:"4rem"}}>
+      <Typography  sx={{ px:"10vw", py:"4rem",fontFamily:'"Mukta", sans-serif',fontWeight:700}}>
         The B.Eng. in Computer Innovation Engineering (CIE) program is a
         four-year full-time international undergraduate program. In order to
         graduate, the students must complete at least 128 credits and satisfy
