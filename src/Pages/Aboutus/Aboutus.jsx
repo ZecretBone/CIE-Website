@@ -8,7 +8,8 @@ function Aboutus() {
   return (
     <div >
         <Headbar/>
-        {/* <Typography sx={{mt:3.5}} variant="h3">In Short About Us</Typography>
+        {/* <Typography sx=
+        {{mt:3.5}} variant="h3">In Short About Us</Typography>
         <Members></Members> */}
         <Gallery></Gallery>
 
