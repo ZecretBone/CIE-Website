@@ -11,6 +11,8 @@ import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 
 export default function Committee() {
+
+    
   const allcom = [
     {
       name: "Dr. Orathai Sangpetch",
