@@ -49,18 +49,19 @@ export default function Projectlist() {
   };
 
   return (
-    <Container alignItems="center" justifyContent="center" px="20%">
-      <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+    <Container sx={{p:"0"}}>
+      <Box sx={{ borderBottom: 1, borderColor: "divider", p:"0",m:"0" }}>
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
+          sx={{mt:"2rem"}}
         >
-          <Tab label="Capstone projects" {...a11yProps(0)} />
-          <Tab label="Student projects" {...a11yProps(1)} />
+          <Tab label="Capstone projects"  {...a11yProps(0)} sx={{ml:"10vw", color:"orange"}}/>
+          <Tab label="Student projects" sx={{color:"orange"}} {...a11yProps(1)} />
         </Tabs>
       </Box>
-      <TabPanel value={value} index={0}>
+      <TabPanel value={value} sx={{p:0, m:0}} index={0}>
         <Capstone/>
       </TabPanel>
       <TabPanel value={value} index={1}>
