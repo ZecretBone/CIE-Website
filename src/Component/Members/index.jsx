@@ -17,9 +17,9 @@ export default function Members() {
           variant="h5"
           alignItems="center"
           justifyContent="left"
-          mt="2rem"
+          mt="5rem"
           px="10vw"
-          sx={{fontWeight:700}}
+          sx={{fontWeight:700, fontSize:"1.5vw",color:'#3C3C3C'}}
         >
           MEET OUR FACULTY
         </Typography>

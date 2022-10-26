@@ -14,7 +14,7 @@ export default function PossibleCareer() {
             pl: "10vw",
           }}
         >
-          <Typography variant="h3" sx={{ color: "#3C3C3C" }}>
+          <Typography variant="h3" sx={{ color: "#3C3C3C", fontSize:"2vw"}}>
             <strong>Possible Career</strong>
           </Typography>
         </Grid>
@@ -27,7 +27,7 @@ export default function PossibleCareer() {
             variant="subtitle1"
             color="white"
             sx={{ alignItems: "center", justifyContent: "left" ,fontWeight:500
-            ,fontFamily:'"Mukta", sans-serif'}}
+            ,fontFamily:'"Mukta", sans-serif', fontSize:"1.25vw"}}
           >
             After completing the program, the graduates can pursue any of the
             following careers:

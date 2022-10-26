@@ -68,16 +68,16 @@ export default function Project(props) {
                   View Report
                 </Button>
               ) : (
-                <Button
-                  disabled
-                  disableElevation
-                  variant="contained"
-                  onClick={() => viewer(item.report)}
-                  size="small"
-                >
-                  View Report
-                </Button>
-              )}
+                  <Button
+                    disabled
+                    disableElevation
+                    variant="contained"
+                    onClick={() => viewer(item.report)}
+                    size="small"
+                  >
+                    View Report
+                  </Button>
+                )}
               {item.yt ? (
                 <Button
                   disableElevation
@@ -89,16 +89,16 @@ export default function Project(props) {
                   View Video
                 </Button>
               ) : (
-                <Button
-                  disabled
-                  disableElevation
-                  variant="contained"
-                  onClick={() => viewer(item.yt)}
-                  size="small"
-                >
-                  View Video
-                </Button>
-              )}
+                  <Button
+                    disabled
+                    disableElevation
+                    variant="contained"
+                    onClick={() => viewer(item.yt)}
+                    size="small"
+                  >
+                    View Video
+                  </Button>
+                )}
               {item.git ? (
                 <Button
                   disableElevation
@@ -110,16 +110,16 @@ export default function Project(props) {
                   View Github
                 </Button>
               ) : (
-                <Button
-                  disabled
-                  disableElevation
-                  variant="contained"
-                  onClick={() => viewer(item.git)}
-                  size="small"
-                >
-                  View Github
-                </Button>
-              )}
+                  <Button
+                    disabled
+                    disableElevation
+                    variant="contained"
+                    onClick={() => viewer(item.git)}
+                    size="small"
+                  >
+                    View Github
+                  </Button>
+                )}
             </Stack>
           </CardActions>
         </Card>
@@ -127,7 +127,7 @@ export default function Project(props) {
       <Grid item xs={1}></Grid>
       <Grid item xs>
         <Stack sx={{ maxWidth: 1000 }}>
-          <Typography sx={{mb: "5vh" }} variant="h3">
+          <Typography sx={{ mb: "5vh" }} variant="h3">
             {item.name}
           </Typography>
           <Typography sx={{ mb: "2vh" }} variant="h4">

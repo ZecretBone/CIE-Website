@@ -13,17 +13,17 @@ export default function Head() {
       <Typography
         variant="h5"
         color="white"
-        sx={{ backgroundColor: "#F3791D", px: "10vw", py: "1.5rem" }}
+        sx={{ backgroundColor: "#F3791D", px: "10vw", py: "1.5rem", fontSize:"1.5vw"}}
       >
         <strong>Transferred Credits and Placement Program</strong>
       </Typography>
       <Typography variant="subtitle2" sx={{ px: "10vw", mt: "2rem" }}>
-        <Typography sx={{ mb: "0.5rem", fontWeight:700
+        <Typography sx={{ mb: "0.5rem", fontWeight:700, fontSize:"1.25vw"
                }}>
           <strong>Transferred Credits</strong>
         </Typography>
-        <Typography sx={{fontWeight:600
-              ,fontFamily:'"Mukta", sans-serif'}}>
+        <Typography sx={{fontWeight:500
+              ,fontFamily:'"Mukta", sans-serif', fontSize:"1vw"}}>
           Any course considered for transfer credit must be relevant to
           program’s objective. The decision to award transfer credit is
           determined by the program committee. Elective credit may be awarded
@@ -43,10 +43,10 @@ export default function Head() {
       </Typography>
       <Typography variant="subtitle2" sx={{ px: "10vw", mt: "2rem", fontWeight:700
               ,fontFamily:'"Mukta", sans-serif' }}>
-        <Typography sx={{ mb: "0.5rem" }}>
+        <Typography sx={{ mb: "0.5rem", fontSize:"1.25vw"}}>
           <strong>Placement Credits</strong>
         </Typography>
-        <Typography sx={{ pb: "4rem", fontWeight:600
+        <Typography sx={{ pb: "4rem", fontWeight:500, fontSize:"1vw"
               ,fontFamily:'"Mukta", sans-serif'}}>
           New students are granted course credits for Advanced Placement (AP),
           International Baccalaureate (IB) or Cambridge International/Edexcel
@@ -56,7 +56,7 @@ export default function Head() {
           enrollment.The transfer and placement credits could be used to satisfy
           the program requirements for mathematical and science, general
           education, introductory and free elective courses.{" "}
-          <Typography display="inline" sx={{ color: "#F3791D", fontWeight:600
+          <Typography display="inline" sx={{ color: "#F3791D", fontWeight:500, fontSize:"1vw"
         ,fontFamily:'"Mukta", sans-serif' }}>
             However, a student must complete courses at the institution for a
             minimum of four semesters, or at least 64 credits.
@@ -66,15 +66,15 @@ export default function Head() {
       <Typography
         variant="h5"
         color="white"
-        sx={{ backgroundColor: "#F3791D", px: "10vw", py: "1.5rem" , fontWeight:600
+        sx={{ backgroundColor: "#F3791D", px: "10vw", py: "1.5rem" , fontWeight:600, fontSize:"1.5vw"
         }}
       >
        Program Structure
       </Typography>
-      <Typography variant="subtitle2" sx={{ px: "10vw", mt: "2rem" }}>
+      <Typography variant="subtitle2" sx={{ px: "10vw", mt: "2rem", pb: "6rem" }}>
         
-        <Typography sx={{ fontWeight:600
-        ,fontFamily:'"Mukta", sans-serif'}}>
+        <Typography sx={{ fontWeight:500
+        ,fontFamily:'"Mukta", sans-serif', fontSize:"1vw"}}>
           Students must complete at least 128 credits to graduate with at least
           30 credits from general education courses; at least 92 credits from
           Computer Innovation Engineering concentration and at least 7 credits

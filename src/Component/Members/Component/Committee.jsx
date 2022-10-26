@@ -46,10 +46,11 @@ export default function Committee() {
       container
       columns={{ xs: 6, sm: 12, md: 12 }}
       direction="row"
-      alignItems="left"
+      alignItems="flex-start"
       justifyContent="left "
       mt="2rem"
       px="15vw"
+      mb="4rem"
     >
       {allcom.map((each) => (
         <Grid item xs={4}>
@@ -57,21 +58,20 @@ export default function Committee() {
             elevation={0}
             sx={{
               maxWidth: "80%",
-              Height: "100%",
-              my: "1rem",
+              Height: "100%"
             }}
           >
             <CardMedia
               component="img"
               height="250rem"
               image={each.pic}
-              sx={{ objectFit: "contain" }}
+              sx={{ objectFit: "contain", objectPosition:"left" }}
             />
-            <CardContent>
-              <Typography gutterBottom variant="h6" component="div" sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600,color:'#3C3C3C'}}>
+            <CardContent sx={{p:"0", pt:"1rem"}}>
+              <Typography gutterBottom variant="h6" component="div" sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600,color:'#3C3C3C', fontSize:"1vw"}}>
                 {each.name}
               </Typography>
-              <Typography variant="subtitle2" color="#F3791D" sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600}}>
+              <Typography variant="subtitle2" color="#F3791D" sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600, fontSize:"0.8vw"}}>
                 <i>{each.content}</i>
               </Typography>
             </CardContent>
@@ -79,34 +79,5 @@ export default function Committee() {
         </Grid>
       ))}
     </Grid>
-
-    //         <List direction="row">
-    //         {allcom.map((each) =>(
-
-    // <ListItem direction="row"  key={each}>
-
-    // <Card sx={{ maxWidth: 345 }}>
-    //       <CardMedia
-    //         component="img"
-    //         height="200"
-    //         image={each.pic}
-    //         alt="green iguana"
-    //       />
-    //       <CardContent>
-    //         <Typography gutterBottom variant="h5" component="div">
-    //           {each.name}
-    //         </Typography>
-    //         <Typography variant="body2" color="text.secondary">
-    //           {each.content}
-    //         </Typography>
-    //       </CardContent>
-
-    //     </Card>
-
-    // </ListItem>
-
-    // ))}
-
-    //     </List>
   );
 }

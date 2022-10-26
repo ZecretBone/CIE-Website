@@ -21,12 +21,12 @@ export default function Objective() {
             pl: "10vw"
           }}
         >
-          <Typography   variant="h3" sx={{ color:"#3C3C3C" }}><strong>Program Educational Objectives</strong></Typography>
+          <Typography variant="h3" sx={{ color: "#3C3C3C", fontSize:"2vw" }}><strong>Program Educational Objectives</strong></Typography>
         </Grid>
         <Grid
           item
           xs={6}
-          sx={{ backgroundColor: "#FF8F3A", py: "3rem", px: "4rem" }}
+          sx={{ backgroundColor: "#FF8F3A", py: "6rem", px: "4rem" }}
         >
           <Typography
             variant="subtitle1"
@@ -35,22 +35,23 @@ export default function Objective() {
               alignItems: "center",
               justifyContent: "left",
               color: "#3C3C3C",
-              fontWeight:700
-              ,fontFamily:'"Mukta", sans-serif'
+              fontWeight: 700
+              , fontFamily: '"Mukta", sans-serif',
+              fontSize:"1.25vw"
             }}
-
-            
           >
-            
-              <u>Engineering Quality</u>
-            
+
+            <u>Engineering Quality</u>
+
           </Typography>
           <Typography
             variant="subtitle1"
             display="flex"
             color="white"
-            sx={{ alignItems: "center", justifyContent: "left",fontWeight:500
-            ,fontFamily:'"Mukta", sans-serif' }}
+            sx={{
+              alignItems: "center", justifyContent: "left", fontWeight: 500
+              , fontFamily: '"Mukta", sans-serif', fontSize:"1vw"
+            }}
           >
             Our graduates will apply computer engineering practice, combined
             with innovative process, to identify and solve significant problems
@@ -63,20 +64,24 @@ export default function Objective() {
             sx={{
               alignItems: "center",
               justifyContent: "left",
-              color: "#3C3C3C",fontWeight:700
-              ,fontFamily:'"Mukta", sans-serif'
+              color: "#3C3C3C", fontWeight: 700
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1.25vw"
             }}
           >
-          
-              <u>Innovation</u>
-          
+
+            <u>Innovation</u>
+
           </Typography>
           <Typography
             variant="subtitle1"
             display="flex"
             color="white"
-            sx={{ alignItems: "center", justifyContent: "left" ,fontWeight:500
-            ,fontFamily:'"Mukta", sans-serif'}}
+            sx={{
+              alignItems: "center", justifyContent: "left", fontWeight: 500
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1vw"
+            }}
           >
             Our graduates will adapt the process by which technological ideas
             are generated, developed and transformed into new business products,
@@ -89,20 +94,25 @@ export default function Objective() {
             sx={{
               alignItems: "center",
               justifyContent: "left",
-              color: "#3C3C3C",fontWeight:700
-              ,fontFamily:'"Mukta", sans-serif'
+              color: "#3C3C3C", fontWeight: 700
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1.25vw"
             }}
           >
-           
-              <u>Leadership</u>
-        
+
+            <u>Leadership</u>
+
           </Typography>
           <Typography
             variant="subtitle1"
             display="flex"
             color="white"
-            sx={{ alignItems: "center", justifyContent: "left",fontWeight:500
-            ,fontFamily:'"Mukta", sans-serif' }}
+            sx={{
+              alignItems: "center", justifyContent: "left", fontWeight: 500
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1vw"
+
+            }}
           >
             Our graduates will apply their technical and innovative leadership
             to establish successful careers in their business, profession and
@@ -115,20 +125,24 @@ export default function Objective() {
             sx={{
               alignItems: "center",
               justifyContent: "left",
-              color: "#3C3C3C",fontWeight:700
-              ,fontFamily:'"Mukta", sans-serif'
+              color: "#3C3C3C", fontWeight: 700
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1.25vw"
             }}
           >
-          
-              <u>Economic Impact</u>
-           
+
+            <u>Economic Impact</u>
+
           </Typography>
           <Typography
             variant="subtitle1"
             display="flex"
             color="white"
-            sx={{ alignItems: "center", justifyContent: "left" ,fontWeight:500
-            ,fontFamily:'"Mukta", sans-serif'}}
+            sx={{
+              alignItems: "center", justifyContent: "left", fontWeight: 500
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1vw"
+            }}
           >
             Our graduates will apply their technical expertise, leadership and
             innovative mindset to support and strengthen the society’s economic
@@ -140,20 +154,24 @@ export default function Objective() {
             sx={{
               alignItems: "center",
               justifyContent: "left",
-              color: "#3C3C3C",fontWeight:700
-              ,fontFamily:'"Mukta", sans-serif'
+              color: "#3C3C3C", fontWeight: 700
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1.25vw"
             }}
           >
-            
-              <u>Lifelong Learning</u>
-            
+
+            <u>Lifelong Learning</u>
+
           </Typography>
           <Typography
             variant="subtitle1"
             display="flex"
             color="white"
-            sx={{ alignItems: "center", justifyContent: "left" ,fontWeight:500
-            ,fontFamily:'"Mukta", sans-serif'}}
+            sx={{
+              alignItems: "center", justifyContent: "left", fontWeight: 500
+              , fontFamily: '"Mukta", sans-serif'
+              ,fontSize:"1vw"
+            }}
           >
             Our graduates will learn new technologies, methodologies and tools
             and adapt them to respond to the challenges of a changing

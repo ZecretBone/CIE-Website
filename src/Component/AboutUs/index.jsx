@@ -1,5 +1,9 @@
 import * as React from "react";
+import { createTheme, responsiveFontSizes } from "@mui/material/styles";
 import {Typography, Grid, Card, CardMedia} from "@mui/material";
+
+let theme = createTheme();
+theme = responsiveFontSizes(theme);
 
 export default function AboutUs() {
   return (
@@ -12,10 +16,10 @@ export default function AboutUs() {
         pl="10vw"
         pr="5vw"
       >
-      <Typography sx={{fontWeight:700}} variant="h4" pb="1.5rem" >ABOUT US</Typography>
+      <Typography sx={{fontWeight:700, fontSize:'2vw',color:'#3C3C3C'}} variant="h4" pb="1.5rem" >ABOUT US</Typography>
       
-      <Typography sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600,color:'#3C3C3C'}} paragraph>
-        <Typography sx={{fontFamily:'"Mukta", sans-serif',fontWeight:600}}  color="#F3791D" display="inline">
+      <Typography sx={{fontFamily:'"Mukta", sans-serif',fontWeight:500,color:'#3C3C3C', fontSize:'1vw'}} paragraph>
+        <Typography sx={{fontFamily:'"Mukta", sans-serif',fontWeight:500, fontSize:'1vw'}}  color="#F3791D" display="inline">
           <strong>The Computer Innovation Engineering Program (CIE)</strong>
         </Typography >{" "}
         is the platform for academic advancement of the 21st century. By
