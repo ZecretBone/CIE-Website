@@ -28,7 +28,7 @@ export default function Capstone(props) {
             color: "white",
             fontSize: "3vw",
             fontWeight: "700",
-            pt: "8rem",
+            pt: "10vw",
           }}
         >
           Capstone Project
@@ -38,7 +38,7 @@ export default function Capstone(props) {
             color: "white",
             fontSize: "1.5vw",
             fontWeight: "500",
-            pt: "3rem",
+            pt: "2vw",
             pb: "5rem",
           }}
         >
@@ -112,7 +112,7 @@ function Item(props) {
             </Button>
           </Typography>
         </Typography>
-        <CardMedia component="img" sx={{ width: 151 }} image={props.item.img} />
+        <CardMedia component="img" sx={{ width: "40%" }} image={props.item.img} />
       </Card>
     </Link>
   );

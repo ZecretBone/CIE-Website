@@ -49,7 +49,7 @@ export default function Projectlist() {
   };
 
   return (
-    <Container sx={{p:"0"}}>
+    <Container sx={{p:"0", pb:"4rem"}}>
       <Box sx={{ borderBottom: 1, borderColor: "divider", p:"0",m:"0" }}>
         <Tabs
           value={value}

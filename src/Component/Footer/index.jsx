@@ -49,6 +49,7 @@ export default function Pagefooter() {
       justifyContent="space-between"
       alignItems="flex-start"
       sx={{ px: "10vw", backgroundColor: "black", color: "white", py: "2rem" }}
+      spacing={2}
     >
       <Grid item container direction="column" xs={3}>
         <Typography variant="h6" sx={{pb:"0.5rem"}}>

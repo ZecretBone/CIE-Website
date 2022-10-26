@@ -96,7 +96,7 @@ export default function Studentproject(props) {
             color: "white",
             fontSize: "3vw",
             fontWeight: "700",
-            pt: "8rem",
+            pt: "10vw",
           }}
         >
           Student Project
@@ -106,7 +106,7 @@ export default function Studentproject(props) {
             color: "white",
             fontSize: "1.5vw",
             fontWeight: "500",
-            pt: "3rem",
+            pt: "2vw",
             pb: "5rem",
           }}
         >
@@ -199,7 +199,7 @@ export default function Studentproject(props) {
                 </Typography>
                 <CardMedia
                   component="img"
-                  sx={{ width: 151 }}
+                  sx={{ width: "40%" }}
                   image={item.img}
                 />
               </Card>
